@@ -1,0 +1,119 @@
+{% extends "layout/layout.html" %}
+{% set page_title = "My Cart" %}
+ {% block content %}
+
+{% include "../templates/layout/header-footer/main-header.html" %} 
+
+<div class="tecspark-breadcrumb" style="background-image: url(assets/images/breadcrumb/breadcrumb.png)">
+  <div class="container">
+    {% include "../templates/components/breadcrumbs/breadcrumbs.html" %}
+  </div>
+</div>
+<!-- End breadcrumb -->
+
+<div class="tecspark-cart-section">
+  <div class="container">
+    <div class="tecspark-cart-list">
+      <table>
+        <thead>
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Subtotal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>
+                <div class="tecspark-cart-thumb">
+                  <i class="ri-close-line"></i>
+                  <img src="assets/images/shop/shop2.png" alt="">
+                  <h5>Portable Projector</h5>
+                </div>
+              </td>
+              <td>$69.00</td>
+              <td>
+                <div class="tecspark-product-number">
+                  <span class="tecspark-product-minus"><i class="ri-subtract-line"></i></span>
+                  <input type="text" value="1"/>
+                  <span class="tecspark-product-plus"><i class="ri-add-line"></i></span>
+                </div>
+              </td>
+              <td>$69.00</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="tecspark-cart-thumb">
+                  <i class="ri-close-line"></i>
+                  <img src="assets/images/shop/shop3.png" alt="">
+                  <h5>Beats Wireless Buds</h5>
+                </div>
+              </td>
+              <td>$119.00</td>
+              <td>
+                <div class="tecspark-product-number">
+                  <span class="tecspark-product-minus"><i class="ri-subtract-line"></i></span>
+                  <input type="text" value="1"/>
+                  <span class="tecspark-product-plus"><i class="ri-add-line"></i></span>
+                </div>
+              </td>
+              <td>$119.00</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="tecspark-cart-thumb">
+                  <i class="ri-close-line"></i>
+                  <img src="assets/images/shop/shop4.png" alt="">
+                  <h5>MagSafe Charger</h5>
+                </div>
+              </td>
+              <td>$29.00</td>
+              <td>
+                <div class="tecspark-product-number">
+                  <span class="tecspark-product-minus"><i class="ri-subtract-line"></i></span>
+                  <input type="text" value="1"/>
+                  <span class="tecspark-product-plus"><i class="ri-add-line"></i></span>
+                </div>
+              </td>
+              <td>$39.00</td>
+            </tr>
+        </tbody>
+      </table>
+      
+    </div>
+    <div class="tecspark-cart-footer">
+      <div class="tecspark-cupon-code">
+        <input type="number" placeholder="Coupon code">
+        <img src="assets/images/shop/shop.png" alt="">
+      </div>
+      <a class="tecspark-update-cart" href="">Update Cart</a>
+  </div>
+  </div>
+</div>
+<!-- End section -->
+
+<div class="section tecspark-section-padding-bottom">
+  <div class="container">
+    <div class="tecspark-cart-total">
+      <h5>Cart Totals</h5>
+      <div class="tecspark-cart-total-item">
+        <p>Subtotal:</p>
+        <p>$217.00</p>
+      </div>
+      <div class="tecspark-cart-total-item">
+        <p>Subtotal:</p>
+        <p><span>$217.00</span></p>
+      </div>
+      <a class="tecspark-update-cart blue-btn" href="">Proceed to Checkout</a>
+    </div>
+  </div>
+</div>
+
+<!-- End -->
+
+
+
+{% include "../templates/layout/header-footer/main-footer.html" %} 
+  
+{% endblock %}

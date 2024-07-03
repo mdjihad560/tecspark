@@ -1,0 +1,79 @@
+.tecspark-thumb{
+  position: relative;
+  &.mr-30{
+    margin-right: 30px;
+    @include max(991px) {
+      margin-right: 0;
+    }
+  }
+  &.ml-30{
+    margin-left: 30px;
+    @include max(991px) {
+      margin-left: 0;
+    }
+  }
+  &.ml-60{
+    margin-left: 60px;
+    @include max(991px) {
+      margin-left: 0;
+    }
+  }
+  @include max(991px) {
+    margin-bottom: 40px;
+  }
+}
+.tecspark-thumb-card {
+  bottom: 24px;
+  left: 24px;
+  position: absolute;
+  // animation: float-top-bottom  6s ease-in-out infinite;
+  box-shadow: 0px 16px 50px 0px rgba(13, 14, 29, 0.12);
+  @include max(575px) {
+    width: 130px;
+  }
+  &.right{
+    left: auto;
+    right: 24px;
+  }
+}
+
+.skillbar {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+  width: 100%;
+  width: 100%;
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+.skillbar-box {
+  height: 6px;
+  border-radius: 5px;
+  position: relative;
+  background-color: rgba(13, 14, 29, 0.2);
+  
+}
+
+.skillbar-bar {
+  height: 6px;
+  width: 0px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  margin-bottom: 0px;
+  background-color: var(--accent-bg);
+
+}
+
+span.skill-bar-percent {
+  font-weight: 400;
+}
+
+p.skillbar-lable {
+  margin-bottom: 8px;
+  font-weight: 600;
+  justify-content: space-between;
+  display: flex;
+}

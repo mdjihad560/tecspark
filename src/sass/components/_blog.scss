@@ -1,0 +1,201 @@
+.tecspark-blog{
+  &-wrap{
+    margin-bottom: 24px;
+    transition: all 0.4s;
+    border: 1px solid rgba(13, 14, 29, 0.1);
+    &:hover{
+      background-color: var(--white-bg);
+      border: 1px solid var(--white-color);
+      box-shadow: 0px 16px 50px 0px rgba(13, 14, 29, 0.12);
+    }
+    &:hover .tecspark-blog-thumb img{
+      transform: scale(1.1);
+    }
+  }
+  &-thumb{
+    overflow: hidden;
+    height: 100%;
+    img{
+      transition: all 0.4s;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &-content{
+    padding: 24px;
+    h2{
+      margin-bottom: 15px;
+    }
+    &.blog-page-content{
+      padding: 40px;
+      @include max(991px) {
+        padding: 30px;
+      }
+    }
+  }
+  &-meta{
+    margin-bottom: 15px;
+    ul{
+      line-height: 1;
+      li{
+        position: relative;
+        padding-right: 20px;
+        display: inline-block;
+        &::before{
+          content: "";
+          right: 4px;
+          top: 11px;
+          width: 5px;
+          height: 5px;
+          border-radius: 20px;
+          position: absolute;
+          background-color: var(--dark-bg);
+        }
+        &:last-child::before{
+          content: none;
+        }
+        a{
+          font-size: 20px;
+          transition: all 0.4s;
+          color: var(--heading-color);
+          &:hover{
+            color: var(--accent-color);
+          }
+        }
+      }
+    }
+  }
+  &-btn{
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    transition: all 0.4s;
+    color: var(--heading-color);
+    margin-top: 35px;
+    i{
+      font-size: 22px;
+      margin-left: 8px;
+      transition: all 0.4s;
+    }
+    &:hover{
+      color: var(--accent-color);
+    }
+    &:hover i{
+      transform: rotate(45deg);
+    }
+  }
+}
+
+// End v1
+
+.tecspark-blog{
+  &-wrap2{
+    margin-bottom: 24px;
+    &:hover .tecspark-blog-thumb2 img{
+      transform: scale(1.1);
+    }
+  }
+  &-thumb2{
+    position: relative;
+    overflow: hidden;
+    img{
+      transition: all 0.4s;
+    }
+    &:before, &:after {
+      content: "";
+      left: 0;
+      top: 0;
+      z-index: 1;
+      opacity: 1;
+      width: 100%;
+      height: 100%;
+      transition: all 0.4s;
+      position: absolute;
+      background: linear-gradient(180deg, rgba(13, 14, 29, 0) 0%, #0D0E1D 100%);
+    }
+    &:after{
+      opacity: 0;
+      background: linear-gradient(180deg, rgba(1, 25, 255, 0) 0%, #0119FF 100%);
+
+    }
+    &:hover::before, 
+    &:hover::after{
+      opacity: 1;
+    }
+  }
+  &-content2{
+    padding: 28px;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    h3{
+      margin-bottom: 7px;
+      color: var(--white-color);
+    }
+  }
+  &-meta2{
+    margin-bottom: 0;
+    ul{
+      li{
+        &::before{
+          background-color: var(--white-bg);
+        }
+        &:last-child::before{
+          content: none;
+        }
+        a{
+          font-size: 20px;
+          color: var(--white-color)!important;
+        }
+      }
+    }
+  }
+
+}
+// end v2
+
+.tecspark-blog-meta2, 
+.tecspark-blog-meta3{
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+// end v2 and v3
+.tecspark-blog-wrap {
+  &.blog-grid{
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    @include max(767px) {
+      display: block;
+    }
+    .tecspark-blog-btn{
+      margin-top: 22px;
+    }
+    
+  }
+}
+.tecspark-blog-content{
+  &.content-large{
+    padding: 30px;
+    @include max(1199px) {
+      padding: 24px;
+    }
+    h3{
+      font-size: 36px;
+      line-height: 1.22em;
+      margin-bottom: 10px;
+      @include max(1199px) {
+        font-size: 30px;
+      }
+    }
+    p{
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+.tecspark-blog-thumb.single-blog{
+  height: auto;
+}

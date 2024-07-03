@@ -1,0 +1,172 @@
+.tecspark-t-two-column{
+  &-slider{
+    &-wrap{
+      border: 1px solid #E7E7E8;
+      background-color: var(--white-bg);
+    }
+  }
+  
+  &-rating{
+    margin-bottom: 18px;
+    ul{
+      li{
+        font-size: 30px;
+        display: inline-block;
+        color: var(--accent-color);
+      }
+    }
+  }
+  &-data{
+    padding: 45px;
+    @include max(1199px) {
+      padding: 30px;
+    }
+    p{
+      font-size: 40px;
+      line-height: 48px;
+      margin-bottom: 50px;
+      @include max(1199px) {
+        font-size: 30px;
+        line-height: 38px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  &-author{
+    h5{
+      margin-bottom: 5px;
+      line-height: 28px;
+    }
+    span{
+      font-size: 20px;
+    }
+  }
+}
+
+.tecspark-t-next, 
+.tecspark-t-prev {
+  width: 60px;
+  height: 60px;
+  left: -30px;
+  top: 50%;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all .4s;
+  border-radius: 100%;
+  transform: translateY(-50%);
+  background-color: var(--white-bg);
+  box-shadow: 0px 16px 50px 0px rgba(13, 14, 29, 0.12);
+  &:focus{
+    box-shadow: 0px 16px 50px 0px rgba(13, 14, 29, 0.12);
+  }
+  @include max(1025px) {
+    left: -25px;
+  }
+  &:hover{
+    color: var(--white-color);
+    background-color: var(--accent-bg);
+  }
+  @include max(767px) {
+    display: none!important;
+  }
+}
+
+.tecspark-t-prev {
+  left: auto;
+  right: -30px;
+  @include max(1025px) {
+    right: -25px;
+  }
+
+}
+// End v2
+
+.tecspark-testimonial{
+  &-box{
+    padding: 28px;
+    margin-bottom: 24px;
+    border: 1px solid #E7E7E8;
+    p{
+      font-size: 26px;
+      line-height: 34px;
+      margin-bottom: 40px;
+      @include max(991px) {
+        font-size: 22px;
+        line-height: 30px;
+      }
+    }
+  }
+  
+  &-rating{
+    margin-bottom: 15px;
+    ul{
+      li{
+        font-size: 30px;
+        display: inline-block;
+        color: var(--accent-color);
+      }
+    }
+  }
+ 
+  
+  &-author{
+    h5{
+      margin-bottom: 3px;
+    }
+    span{
+      font-size: 20px;
+    }
+  }
+}
+
+// End v4
+
+.tecspark-testimonial{
+
+  &-rating{
+    margin-bottom: 20px;
+    ul{
+      li{
+        font-size: 30px;
+        display: inline-block;
+        color: var(--accent-color);
+      }
+    }
+  }
+  &-data{
+    padding: 0 100px;
+    text-align: center;
+    @include max(767px) {
+      padding: 0;
+    }
+    p{
+      font-size: 40px;
+      line-height: 48px;
+      margin-bottom: 40px;
+      @include max(1199px) {
+        font-size: 30px;
+        line-height: 38px;
+      }
+    }
+  }
+  &-author{
+    img{
+      width: 90px;
+      height: 90px;
+      border-radius: 100%;
+      margin: 0 auto 15px;
+    }
+    h5{
+      margin-bottom: 5px;
+    }
+    span{
+      font-size: 20px;
+    }
+  }
+}

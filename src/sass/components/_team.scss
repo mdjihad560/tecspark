@@ -1,0 +1,96 @@
+.tecspark-team{
+  &-wrap{
+    margin-bottom: 24px;
+    &:hover .tecspark-team-thumb::before{
+      opacity: 1;
+    }
+    &:hover .tecspark-social-icon-box.position{
+      opacity: 1;
+      bottom: 28px;
+      visibility: visible;
+    }
+    &:hover .tecspark-team-thumb img{
+      transform: scale(1.1);
+    }
+  }
+  &-thumb{
+    position: relative;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.4s;
+    }
+   
+    &:before{
+      content: "";
+      left: 0;
+      z-index: 1;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      transition: all 0.4s;
+      position: absolute;
+      opacity: 0;
+      background: linear-gradient(180deg, rgba(1, 25, 255, 0) 23.74%, #0119FF 100%);
+    }
+  }
+  &-data{
+    padding-top: 20px;
+
+    h5{
+      margin-bottom: 5px;
+    }
+    p{
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  &-data2{
+    padding: 20px;
+    background-color: var(--white-bg);
+  }
+}
+
+// End team all
+
+// start team details
+.tecspark-team-single{
+  &-wrap{
+    margin-bottom: 80px;
+    border: 1px solid #E7E7E8;
+    @include max(991px) {
+      margin-bottom: 60px;
+    }
+  }
+  &-content{
+    padding: 50px;
+    @include max(1199px) {
+      padding: 30px;
+    }
+    h2{
+      margin-bottom: 10px;
+    }
+    span{
+      font-weight: 600;
+      display: block;
+      margin-bottom: 24px;
+      color: var(--accent-color);
+    }
+  }
+}
+
+.tecspark-team-form {
+  max-width: 635px;
+  margin: 0 auto;
+  text-align: center;
+  h2{
+    margin-bottom: 10px;
+  }
+  p{
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+}

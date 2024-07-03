@@ -1,0 +1,43 @@
+.tecspark-navigation {
+  margin-top: 56px;
+  text-align: center;
+  @include max(991px) {
+    margin-top: 36px;
+  }
+  .pagination{
+    &.center{
+      justify-content: center;
+    }
+  }
+}
+
+.tecspark-navigation span.current, 
+.page-links .current {
+  cursor: not-allowed;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+.tecspark-navigation a, 
+.tecspark-navigation span, 
+.page-links a, 
+.page-links span {
+  height: 60px;
+  width: 60px;
+  font-weight: 500;
+  display: inline-flex;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  color: var(--body-color);
+  border-radius: 50px;
+  background-color: var(--light-bg1);
+}
+
+.tecspark-navigation a:hover, 
+.page-links a:hover {
+  background-color: var(--accent-bg);
+  color: var(--white-color);
+}
