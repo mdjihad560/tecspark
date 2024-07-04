@@ -11,12 +11,12 @@
         height: 44px;
         display: flex;
         font-size: 18px;
-        border-radius: 100%;
+        border-radius: 6px;
         align-items: center;
         transition: all 0.4s;
         justify-content: center;
-        color: var(--heading-color);
-        background: rgba(245, 245, 245, 1);
+        color: var(--white-color);
+        background: #1E2656;
         &:hover{
           color: var(--white-color);
           background: var(--accent-bg);
@@ -31,93 +31,21 @@
     ul{
       li{
         a{
-          color: var(--white-color);
-          background: #1F202E;
-          &:hover{
-            background: var(--accent-bg);
-          }
-        }
-      }
-    }
-  }
-  &.style-three{
-    ul{
-      li{
-        a{
-          background: var(--light-bg1);
-          &:hover{
-            color: var(--white-color);
-            background: var(--accent-bg);
-          }
-        }
-      }
-    }
-  }
-  &.style-four{
-    ul{
-      li{
-        a{
-          background: var(--white-bg);
-          &:hover{
-            color: var(--white-color);
-            background: var(--dark-bg);
-          }
-        }
-      }
-    }
-    &.position{
-      bottom: 0;
-      width: 100%;
-      opacity: 0;
-      z-index: 2;
-      visibility: hidden;
-      text-align: center;
-      transition: all 0.4s;
-      position: absolute;
-    }
-  }
-  &.right{
-    text-align: right;
-    @include max(767px) {
-      text-align: center;
-    }
-  }
-}
-
-.tecspark-social-icon{
-  margin-top: 24px;
-  ul{
-    li{
-      margin-right: 15px;
-      &:last-child{
-        margin-right: 0;
-      }
-      display: inline-block;
-      a{
-        font-size: 20px;
-        transition: all 0.4s;
-        color: var(--white-color);
-        &:hover{
-          color: var(--accent-color);
-        }
-      }
-    }
-  }
-  &.dark-color{
-    ul{
-      li{
-        a{
           color: var(--heading-color);
+          background-color: var(--light-bg2);
           &:hover{
-            color: var(--accent-color);
+            color: var(--white-color);
+            background-color: var(--accent-bg);
           }
         }
       }
     }
   }
-}
-.m_bottom{
-  @include max(991px) {
-    margin-bottom: 40px;
+  &.right-align{
+    text-align: right;
+    @include max(991px) {
+      text-align: center;
+      margin-top: 20px;
+    }
   }
 }

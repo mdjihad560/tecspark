@@ -1,33 +1,21 @@
 .tecspark-breadcrumb{
   z-index: 0;
   text-align: center;
-  padding: 170px 0;
+  padding: 310px 0 160px;
   position: relative;
   background-size: cover;
   background-position: center center;
-  margin-top: 157px;
-  &:before {
-    content: " ";
-    left: 0;
-    top: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-size: cover;
-    background-position: center center;
-    background-image: url(../images/breadcrumb/overlay.png);
-  }
   @include max(991px) {
-    padding: 100px 0 80px;
-    margin-top: 90px;
+    padding: 200px 0 100px;
   }
   @include max(767px) {
-    padding: 100px 0 80px;
+    padding: 200px 0 80px;
   }
-  @include max(479px) {
-    margin-top: 75px;
+
+  @include max(575px) {
+    padding: 160px 0 80px;
   }
+
 }
 
 h1.post__title{
@@ -40,13 +28,10 @@ h1.post__title{
     li{
       line-height: 1;
       z-index: 0;
-      padding: 0 18px;
+      padding: 0 15px;
       position: relative;
       display: inline-block;
       color: var(--white-color);
-      @include max(767px) {
-        font-size: 18px;
-      }
       &:first-child{
         padding-left: 0;
       }
@@ -56,7 +41,7 @@ h1.post__title{
       &:before {
         content: "\ea6e";
         right: -14px;
-        top: 2px;
+        top: 0px;
         z-index: -1;
         position: absolute;
         font-family: 'remixicon';
@@ -65,7 +50,7 @@ h1.post__title{
         content: none;
       }
       a{
-        color: var(--white-color);
+        color: #CED0DF;
       }
     }
   }

@@ -143,6 +143,7 @@
 
 .site-header--menu-right .menu-block {
   margin-left: auto;
+  margin-right: 70px;
 }
 
 @media (min-width: 992px) {
@@ -356,7 +357,6 @@
 
 .site-menu-main .nav-link-item {
   color: var(--heading-color);
-  font-size: 20px;
   font-weight: 500;
   font-style: normal;
   letter-spacing: normal;
@@ -377,10 +377,10 @@
 
 @media (min-width: 992px) {
   .site-menu-main .nav-link-item {
-    padding-top: 35px !important;
-    padding-bottom: 35px !important;
-    padding-left: 19px !important;
-    padding-right: 19px !important;
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
 }
 
@@ -403,7 +403,7 @@
     box-shadow: -2px 2px 70px -25px rgb(0 0 0 / 30%);
     position: absolute;
     left: 0;
-    top: 102px;
+    top: 90px;
     margin: 0;
     padding: 12px 0;
     transition: .4s;
@@ -449,8 +449,7 @@
 }
 
 .site-menu-main .sub-menu--item {
-    font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 @media (max-width: 992px) {
@@ -463,7 +462,7 @@
 
 @media (min-width: 992px) {
   .site-menu-main .sub-menu--item {
-    color: #000;
+    color: #0A165E;
   }
 }
 
@@ -471,7 +470,7 @@
   color: inherit;
   padding: 4px 20px;
   font-weight: 700;
-  color: #000;
+  color: #0A165E;
   position: relative;
 }
 .site-menu-main .sub-menu--item > a .menu-item-text {
@@ -486,7 +485,7 @@
   right: 0;
   height: 2px;
   width: 0;
-  background-color: #202030;
+  background-color: #0A165E;
   transition: all 0.3s ease;
 }
 .site-menu-main .sub-menu--item > a:hover .menu-item-text::after {
@@ -842,7 +841,7 @@
     align-items: center;
   }
   .site-menu-main i {
-    margin-left: 10px;
+    margin-left: 2px;
     font-size: 20px;
   }
 }

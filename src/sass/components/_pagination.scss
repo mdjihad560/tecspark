@@ -1,8 +1,8 @@
 .tecspark-navigation {
-  margin-top: 56px;
+  margin-top: 80px;
   text-align: center;
   @include max(991px) {
-    margin-top: 36px;
+    margin-top: 60px;
   }
   .pagination{
     &.center{
@@ -23,17 +23,16 @@
 .page-links span {
   height: 60px;
   width: 60px;
-  font-weight: 500;
+  font-weight: 600;
   display: inline-flex;
   text-align: center;
   line-height: 60px;
-  font-size: 20px;
   align-items: center;
   justify-content: center;
   margin: 0 5px;
   color: var(--body-color);
-  border-radius: 50px;
-  background-color: var(--light-bg1);
+  border-radius: 6px;
+  background-color: var(--light-bg2);
 }
 
 .tecspark-navigation a:hover, 

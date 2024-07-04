@@ -7,7 +7,10 @@ const plumberNotifier = require('gulp-plumber-notifier');
 const sourcemaps = require('gulp-sourcemaps');
 //const sass = require('gulp-sass');
 const sass = require('gulp-dart-sass');
+
 const del = require('del');
+// import del from 'del';
+
 //const imagemin = require('gulp-imagemin');
 //const imageminPngQuant = require('imagemin-pngquant');
 //const imageminjpegCrompress = require('imagemin-jpeg-recompress');
@@ -32,7 +35,7 @@ const files = {
     fonts_path: 'src/fonts/**/*',
     jquery_js_path: 'src/js/jquery-3.7.1.min.js',
     image_path: 'src/images/**/*.{png,jpeg,jpg,svg,gif,ico}',
-    buildOutput:'build'
+    buildOutput: 'build'
 };
 
 
@@ -205,9 +208,9 @@ function watchfiles() {
     watch(files.output + '/*').on('change', browserSync.reload);
 }
 
-function  build (){
+function build() {
     return src(['dist/**/*'])
-    .pipe(dest("./build"))
+        .pipe(dest("./build"))
 }
 
 
@@ -226,7 +229,7 @@ exports.default = parallel(
     serve,
     appJstask,
     watchfiles
- 
+
 
 );
 

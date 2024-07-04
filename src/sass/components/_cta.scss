@@ -1,14 +1,11 @@
 .tecspark-cta {
-  &-section{
-    background-size: cover;
-    background-position: center;
-  }
   &-wrap{
-    padding: 100px;
-    line-height: 1.1em;
+    padding: 105px;
+    position: relative;
+    border-radius: 30px;
     background-size: cover;
     background-position: center;
-    @include max(991px) {
+    @include max(1399px) {
       padding: 80px;
     }
     @include max(767px) {
@@ -26,19 +23,21 @@
     }
     
     h2{
-      font-size: 80px;
+      font-size: 64px;
       margin-bottom: 12px;
-      line-height: 1em;
       color: var(--white-color);
+      @include max(1399px) {
+        font-size: 60px;
+      }
       @include max(1199px) {
-        font-size: 70px;
+        font-size: 48px;
       }
       @include max(767px) {
-        font-size: 40px;
+        font-size: 36px;
       }
     }
     p{
-      color: var(--white-color);
+      color: var(--light-color2);
     }
     &.dark-color{
       h2, p{

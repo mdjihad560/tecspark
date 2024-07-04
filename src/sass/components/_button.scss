@@ -1,7 +1,30 @@
 // bootstrap button style
 
 .tecspark-default-btn, 
-#tecspark-default-btn {
+#tecspark-default-btn,
+button#tecspark-subscription-btn {
+  font-size: $button_font_size;
+  line-height: $buton_line_height;
+  padding: $button_padding;
+  border-radius: $buton_border_radius;
+  font-weight: $button_font_weight;
+  font-family: $button_font_family;
+  width: fit-content;
+  z-index: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  color: var(--white-color)!important;
+  background-color: var(--accent-bg);
+  z-index: 0;
+  overflow: hidden;
+  position:relative;
+  transform-style: preserve-3d;
   font-size: $button_font_size;
   line-height: $buton_line_height;
   padding: $button_padding;
@@ -16,67 +39,46 @@
   display: inline-flex;
   align-items: center;
   text-align: center;
+  justify-content: center;
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
-  overflow: hidden;
-  color: var(--white-color)!important;
+  color: var(--heading-color);
   background-color: var(--accent-bg);
-  position: relative;
   z-index: 0;
   overflow: hidden;
   position:relative;
   transform-style: preserve-3d;
-  i{
-    font-size: 22px;
-    margin-left: 12px;
-    transition: all 0.4s ease-in-out;
+  &:hover{
+    color: var(--accent-color);
   }
-
-  &:hover i{
-    transform: translate(42px, -42px);
-  }
-
   &::before{
-    background-repeat: no-repeat;
+    transition-duration: 800ms;
     position: absolute;
-    content: "\ea70";
-    right: 0;
-    top: 0;
-    opacity: 1;
-    height: 100%;
-    font-size: 22px;
-    font-family: remixicon !important;
-    transform: translate(-65px,65px);
-    transition: all 0.2s linear 0s;
+    width: 200%;
+    height: 200%;
+    content: "";
+    top: 110%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--dark-bg);
   }
-  &:hover::before{
-    transform: translate(-40px,18px);
+  &:hover:before{
+    top: -40%;
   }
   &.tecspark-white-btn{
     color: var(--heading-color)!important;
-    background-color: var(--white-bg);
-    &:before{
-      content: "\ea70";
+    background-color: var(--white-color);
+ 
+    &:hover{
+      color: var(--white-color)!important;
     }
-  }
-  &.outline-btn-dark{
-    padding: 17px 38px;
-    color: var(--heading-color)!important;
-    border: 1px solid var(--heading-color);
-    background-color: transparent !important;
-  }
-  &.outline-btn-white{
-    padding: 17px 38px;
-    color: var(--white-color)!important;
-    border: 1px solid var(--white-color);
-    background-color: transparent !important;
   }
   &.tecspark-header-btn{
-    padding: 14px 35px;
-    &:hover::before{
-      transform: translate(-35px,15px);
-    }
+    padding: 14px 24px;
   }
   &.disabled,
   &:disabled {
