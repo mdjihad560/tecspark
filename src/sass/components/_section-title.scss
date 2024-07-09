@@ -1,3 +1,7 @@
+.z-index{
+  z-index: 0;
+  position: relative;
+}
 .tecspark-section-padding{
   padding: 130px 0;
   @include max(991px) {
@@ -8,7 +12,7 @@
   }
 }
 .tecspark-section-padding2{
-  padding: 120px 0 106px;
+  padding: 130px 0 106px;
   @include max(991px) {
     padding: 100px 0 76px;
   }
@@ -31,6 +35,16 @@
     padding: 80px 0 56px;
   }
 }
+
+.tecspark-section-padding5{
+  padding: 130px 0 90px;
+  @include max(991px) {
+    padding: 100px 0 60px;
+  }
+  @include max(767px) {
+    padding: 80px 0 40px;
+  }
+}
 .tecspark-section-padding-top{
   padding: 130px 0 0;
   @include max(991px) {
@@ -51,11 +65,41 @@
   }
 }
 
+.large-padding-tb{
+  padding: 130px 0 230px;
+  @include max(1199px) {
+    padding: 130px 0;
+  }
+  @include max(991px) {
+    padding: 100px 0;
+  }
+  @include max(767px) {
+    padding: 80px 0;
+  }
+}
+
+
+.tecspark-divider{
+  height: 1px;
+  background-color: var(--light-color1);
+  &.color2{
+    background-color: var(--light-color1);
+  }
+}
+.extra-padding-tb{
+  padding: 100px 0 56px;
+  @include max(991px) {
+    padding: 80px 0 56px;
+  }
+}
+
 // end section padding
 .tecspark-section-title{
   padding-bottom: 50px;
   @include max(991px) {
     text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
   }
   &.center {
     text-align: center;
@@ -82,19 +126,16 @@
 }
 
 .tecspark-default-content{
-  h2, h5{
+  h5{
     margin-bottom: 20px;
   }
-  &.ml-60{
-    margin-left: 60px;
-    @include max(1399px) {
-      margin-left: 0;
+  h2{
+    margin-bottom: 20px;
+    @include max(1199px) {
+      font-size: 40px;
     }
-  }
-  &.mr-60{
-    margin-right: 60px;
-    @include max(1399px) {
-      margin-right: 0;
+    @include max(767px) {
+      font-size: 34px;
     }
   }
   &.light-color{
@@ -102,11 +143,30 @@
       color: var(--white-color);
     }
   }
+  @include max(991px) {
+    text-align: center;
+    max-width: 585px;
+    margin: 0 auto!important;
+  }
 }
 
-.ml30{
-  margin-left: 30px;
-  @include max(767px) {
+.ml40{
+  margin-left: 40px;
+  @include max(991px) {
     margin-left: 0;
+  }
+}
+
+.ml60{
+  margin-left: 60px;
+  @include max(991px) {
+    margin-left: 0;
+  }
+}
+
+.mr40{
+  margin-right: 40px;
+  @include max(991px) {
+    margin-right: 0;
   }
 }

@@ -1,16 +1,26 @@
 .tecspark-team{
   &-wrap{
     margin-bottom: 24px;
-    &:hover .tecspark-team-thumb::before{
-      opacity: 1;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: all 0.4s;
+    background-color: var(--white-bg);
+    @include max(767px) {
+      border-radius: 10px;
     }
     &:hover .tecspark-social-icon-box.position{
       opacity: 1;
-      bottom: 28px;
-      visibility: visible;
+      left: 20px;
     }
     &:hover .tecspark-team-thumb img{
       transform: scale(1.1);
+    }
+    &.border_all{
+      border: 1px solid var(--light-color1);
+      &:hover{
+        border: 1px solid var(--white-color);
+        box-shadow: 0px 12px 40px 4px rgba(10, 22, 94, 0.08);
+      }
     }
   }
   &-thumb{
@@ -20,36 +30,14 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: all 0.4s;
-    }
-   
-    &:before{
-      content: "";
-      left: 0;
-      z-index: 1;
-      bottom: 0;
-      width: 100%;
-      height: 100%;
-      transition: all 0.4s;
-      position: absolute;
-      opacity: 0;
-      background: linear-gradient(180deg, rgba(1, 25, 255, 0) 23.74%, #0119FF 100%);
+      transition: all 0.6s;
     }
   }
   &-data{
-    padding-top: 20px;
-
+    padding: 24px;
     h5{
       margin-bottom: 5px;
     }
-    p{
-      font-size: 20px;
-      line-height: 24px;
-    }
-  }
-  &-data2{
-    padding: 20px;
-    background-color: var(--white-bg);
   }
 }
 

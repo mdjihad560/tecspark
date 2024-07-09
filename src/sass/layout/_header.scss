@@ -87,11 +87,15 @@ header.tecspark-header-section.sticky-menu{
 }
 
 // End v2
-.tecspark-header-bottom {
   .header-bottom-border{
     border-bottom: 1px solid #272F5D;
+    &.border-color-light{
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    @include max(991px) {
+      padding: 20px 0;
+    }
   }
-}
 .sticky-menu{
   .tecspark-header-bottom {
     background-color: var(--dark-bg);
@@ -117,6 +121,9 @@ header.tecspark-header-section.sticky-menu{
   align-items: center;
   justify-content: center;
   background-color: #1E2656;
+  &.light-color{
+    background-color: rgba(255, 255, 255, 0.12);
+  }
   @include max(767px) {
     display: none;
   }
@@ -270,10 +277,7 @@ header.tecspark-header-section.sticky-menu{
     padding-top: 70px;
     overflow-y: scroll;
     background-color: var(--white-bg);
-    .tecspark-contact-info-wrap {
-      margin-top: 35px;
-      margin-bottom: 35px;
-  }
+
   .tecspark-social-icon.tecspark-social-icon3{
     margin-bottom: 30px;
   }
@@ -286,30 +290,6 @@ header.tecspark-header-section.sticky-menu{
     height: 100%;
     object-fit: cover;
     border-radius:5px;
-  }
-}
-
-.tecspark-sidebar-info{
-  margin-bottom: 40px;
-  i{
-    width: 48px;
-    height: 48px;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: var(--white-color);
-    background-color: var(--heading-color);
-  }
-  h5{
-    margin-bottom: 6px!important;
-  }
-
-  a{
-    display: block;
-    color: var(--body-color);
   }
 }
 

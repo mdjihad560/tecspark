@@ -1,4 +1,4 @@
-.tecspark-cta {
+.tecspark-footer-cta {
   &-wrap{
     padding: 105px;
     position: relative;
@@ -13,6 +13,43 @@
     }
   }
   &-content{
+    @include max(991px) {
+      text-align: center;
+    }
+    h2{
+      font-size: 64px;
+      margin-bottom: 20px;
+      color: var(--white-color);
+      @include max(1399px) {
+        font-size: 60px;
+      }
+      @include max(1199px) {
+        font-size: 48px;
+      }
+      @include max(767px) {
+        font-size: 36px;
+      }
+    }
+    p{
+      color: var(--light-color2);
+    }
+  }
+  &-btn{
+    @include max(991px) {
+      text-align: center;
+      width: 100%;
+      margin-top: 40px;
+    }
+  }
+  
+}
+
+.tecspark-cta {
+  &-wrap{
+    background-size: cover;
+    background-position: center;
+  }
+  &-content{
     &.center{
       max-width: 600px;
       text-align: center;
@@ -24,7 +61,7 @@
     
     h2{
       font-size: 64px;
-      margin-bottom: 12px;
+      margin-bottom: 20px;
       color: var(--white-color);
       @include max(1399px) {
         font-size: 60px;

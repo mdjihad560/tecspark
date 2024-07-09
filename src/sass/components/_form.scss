@@ -128,10 +128,23 @@ button#header-search {
 button#tecspark-subscription-btn {
    margin-top: 12px;
    width: 100%;
+   text-align: center;
+   display: block;
    &:hover{
       color: var(--accent-color)!important;
    }
    &:before{
       background-color: var(--white-bg);
+   }
+}
+
+.btn-hover-dark{
+   button#tecspark-subscription-btn {
+      &:hover{
+         color: var(--white-color)!important;
+      }
+      &:before{
+         background-color: var(--dark-bg);
+      }
    }
 }

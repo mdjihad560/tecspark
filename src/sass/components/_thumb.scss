@@ -1,79 +1,94 @@
 .tecspark-thumb{
+  z-index: 0;
   position: relative;
-  &.mr-30{
-    margin-right: 30px;
+  @include max(767px) {
+    margin-bottom: 40px;
+  }
+  &-position {
+    position: absolute;
+    width: 64%;
+    bottom: -100px;
+    right: -90px;
     @include max(991px) {
-      margin-right: 0;
+      bottom: -75px;
+      right: -34px;
+      width: 40%;
+    }
+    @include max(767px) {
+      display: none;
     }
   }
-  &.ml-30{
-    margin-left: 30px;
+  &-position2 {
+    position: absolute;
+    width: 64%;
+    bottom: -100px;
+    left: -90px;
     @include max(991px) {
-      margin-left: 0;
+      bottom: -75px;
+      right: -34px;
+      width: 40%;
+    }
+    @include max(767px) {
+      display: none;
     }
   }
-  &.ml-60{
-    margin-left: 60px;
+  &-position3 {
+    position: absolute;
+    width: 64%;
+    bottom: -100px;
+    left: -120px;
     @include max(991px) {
-      margin-left: 0;
+      bottom: -75px;
+      left: 0;
+      width: 40%;
     }
+    @include max(767px) {
+      display: none;
+    }
+  }
+}
+.extra-mr{
+  margin-right: 150px;
+  @include max(1399px) {
+    margin-right: 70px;
   }
   @include max(991px) {
+    margin-right: 0px;
+    margin-bottom: 115px;
+  }
+  @include max(767px) {
+    margin-right: 0px;
     margin-bottom: 40px;
   }
 }
-.tecspark-thumb-card {
-  bottom: 24px;
-  left: 24px;
-  position: absolute;
-  // animation: float-top-bottom  6s ease-in-out infinite;
-  box-shadow: 0px 16px 50px 0px rgba(13, 14, 29, 0.12);
-  @include max(575px) {
-    width: 130px;
+.extra-ml{
+  margin-left: 150px;
+  @include max(1399px) {
+    margin-left: 70px;
   }
-  &.right{
-    left: auto;
-    right: 24px;
+  @include max(991px) {
+    margin-left: 0px;
+    margin-bottom: 115px;
   }
-}
-
-.skillbar {
-  position: relative;
-  display: inline-block;
-  margin-bottom: 20px;
-  width: 100%;
-  width: 100%;
-  &:last-child{
-    margin-bottom: 0;
+  @include max(767px) {
+    margin-left: 0px;
+    margin-bottom: 40px;
   }
 }
 
-.skillbar-box {
-  height: 6px;
-  border-radius: 5px;
-  position: relative;
-  background-color: rgba(13, 14, 29, 0.2);
-  
+.extra-ml2{
+  margin-left: 125px;
+  @include max(1399px) {
+    margin-left: 70px;
+  }
+  @include max(991px) {
+    margin-left: 0px;
+    margin-bottom: 115px;
+  }
+  @include max(767px) {
+    margin-left: 0px;
+    margin-bottom: 40px;
+  }
 }
 
-.skillbar-bar {
-  height: 6px;
-  width: 0px;
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  margin-bottom: 0px;
-  background-color: var(--accent-bg);
-
-}
-
-span.skill-bar-percent {
-  font-weight: 400;
-}
-
-p.skillbar-lable {
-  margin-bottom: 8px;
-  font-weight: 600;
-  justify-content: space-between;
-  display: flex;
-}
+// End thumb v1

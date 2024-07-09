@@ -2,7 +2,9 @@
 
 .tecspark-default-btn, 
 #tecspark-default-btn,
-button#tecspark-subscription-btn {
+button#tecspark-subscription-btn,
+button#tecspark-main-form-btn,
+.tecspark-pricing-btn {
   font-size: $button_font_size;
   line-height: $buton_line_height;
   padding: $button_padding;
@@ -19,38 +21,14 @@ button#tecspark-subscription-btn {
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
-  color: var(--white-color)!important;
-  background-color: var(--accent-bg);
-  z-index: 0;
-  overflow: hidden;
-  position:relative;
-  transform-style: preserve-3d;
-  font-size: $button_font_size;
-  line-height: $buton_line_height;
-  padding: $button_padding;
-  border-radius: $buton_border_radius;
-  font-weight: $button_font_weight;
-  font-family: $button_font_family;
-  width: fit-content;
-  position: relative;
-  z-index: 1;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  display: inline-flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
-  color: var(--heading-color);
+  color: var(--white-color);
   background-color: var(--accent-bg);
   z-index: 0;
   overflow: hidden;
   position:relative;
   transform-style: preserve-3d;
   &:hover{
-    color: var(--accent-color);
+    color: var(--white-color);
   }
   &::before{
     transition-duration: 800ms;
@@ -72,13 +50,36 @@ button#tecspark-subscription-btn {
   &.tecspark-white-btn{
     color: var(--heading-color)!important;
     background-color: var(--white-color);
- 
+    &:hover{
+      color: var(--white-color)!important;
+    }
+    &::before{
+      background-color: var(--accent-bg);
+    }
+    &.hover-default{
+      &::before{
+        background-color: var(--dark-bg);
+      }
+    }
+  }
+  
+  &.tecspark-light-btn{
+    color: var(--heading-color)!important;
+    background-color: var(--light-bg2);
     &:hover{
       color: var(--white-color)!important;
     }
   }
   &.tecspark-header-btn{
     padding: 14px 24px;
+  }
+  &.hover-white{
+    &:hover{
+      color: var(--accent-color);
+    }
+    &::before{
+      background-color: var(--white-bg);
+    }
   }
   &.disabled,
   &:disabled {
