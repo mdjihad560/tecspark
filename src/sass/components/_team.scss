@@ -45,24 +45,28 @@
 
 // start team details
 .tecspark-team-single{
-  &-wrap{
-    margin-bottom: 80px;
-    border: 1px solid #E7E7E8;
+  &-thumb{
+    border-radius: 18px;
+    overflow: hidden;
     @include max(991px) {
-      margin-bottom: 60px;
+      margin-bottom: 35px;
     }
   }
   &-content{
-    padding: 50px;
-    @include max(1199px) {
-      padding: 30px;
-    }
     h2{
       margin-bottom: 10px;
+    }
+    margin-bottom: 80px;
+    @include max(991px) {
+      margin-bottom: 60px;
+    }
+    @include max(767px) {
+      margin-bottom: 40px;
     }
     span{
       font-weight: 600;
       display: block;
+      font-size: 20px;
       margin-bottom: 24px;
       color: var(--accent-color);
     }

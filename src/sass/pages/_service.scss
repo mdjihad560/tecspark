@@ -1,0 +1,95 @@
+.tecspark-service-details{
+  &-wrap{
+    img{
+      margin-bottom: 50px;
+      border-radius: 18px;
+    }
+  }
+  &-item{
+    margin-bottom: 45px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    h3{
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.tecspark-service{
+  &-sidebar{
+    margin-left: 30px;
+    @include max(1199px) {
+      margin-left: 0;
+    }
+    @include max(991px) {
+      margin-top: 40px;
+    }
+  }
+  &-menu{
+    ul{
+      li{
+        margin-bottom: 14px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+        a{
+          font-weight: 600;
+          display: flex;
+          border-radius: 6px;
+          padding: 14px 24px;
+          transition: all 0.4s;
+          color: var(--heading-color);
+          justify-content: space-between;
+          background-color: var(--light-bg2);
+          &:hover{
+            color: var(--white-color);
+            background-color: var(--accent-bg);
+          }
+          i{
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  &-contact{
+    margin-top: 50px;
+    padding: 60px 30px;
+    text-align: center;
+    border-radius: 18px;
+    background-size: cover;
+    @include max(991px) {
+      padding: 30px;
+    }
+    &-icon{
+      width: 90px;
+      height: 90px;
+      display: flex;
+      margin: 0 auto 15px;
+      border-radius: 10px;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.1);
+
+    }
+ 
+    h3{
+      font-size: 34px;
+      line-height: 42px;
+      margin-bottom: 10px;
+      color: var(--white-color);
+      @include max(991px) {
+        font-size: 30px;
+        line-height: 36px;
+      }
+    }
+    p{
+      color: var(--light-color2);
+      margin-bottom: 20px;
+    }
+  }
+  
+}

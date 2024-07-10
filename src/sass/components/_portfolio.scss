@@ -50,7 +50,7 @@
   &-data{
     bottom: 0;
     z-index: 2;
-    padding: 28px;
+    padding: 28px 15px;
     width: 100%;
     position: absolute;
     transition: all 0.4s;
@@ -148,5 +148,137 @@
     }
   }
 
+}
+
+// end p 2
+
+
+// start portfolio details
+.tecspark-pd-wrap{
+  padding: 50px 0 100px;
+  @include max(991px) {
+    padding: 40px 0 80px;
+  }
+  .tecspark-icon-list{
+    margin-bottom: 40px;
+    @include max(991px) {
+      margin-bottom: 24px;
+    }
+
+  }
+}
+.tecspark-pd-content-item{
+  margin-bottom: 24px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  @include max(991px) {
+    margin-bottom: 24px;
+  }
+  img{
+    border-radius: 18px;
+    @include max(991px) {
+      margin-bottom: 24px;
+    }
+  }
+  h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+ 
+}
+.tecspark-pd-sidebar{
+  &-wrap{
+    margin-left: 30px;
+    position: sticky;
+    top: 120px;
+    @include max(991px) {
+      margin-left: 0;
+      margin-top: 40px;
+      position: static;
+    }
+    .tecspark-social-icon-box{
+      margin-top: 24px;
+    }
+  }
+  padding: 30px;
+  border-radius: 18px;
+  background-color: var(--light-bg1);
+  @include max(767px) {
+    border-radius: 10px;
+  }
+  h5{
+    margin-bottom: 20px;
+  }
+  &-item{
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    span{
+      width: 100px;
+      font-weight: 600;
+      display: block;
+      color: var(--heading-color);
+    }
+    a{
+      color: var(--accent-color);
+    }
+  }
+}
+
+
+.tecspark-post {
+  &-navigation2{
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    justify-content: space-between;
+    border-top: 1px solid var(--light-color1);
+    @include max(767px) {
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+    .nav-previous, 
+    .nav-next{
+      display: flex;
+      gap: 16px;
+    }
+    .nav-next{
+      text-align: right;
+    }
+  }
+  &-data{
+    p{
+      font-weight: 400;
+      margin-bottom: 5px;
+      color: var(--body-color);
+    }
+  }
+  &-icon{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    border-radius: 6px;
+    transition: all 0.4s;
+    justify-content: center;
+    background-color: var(--light-bg2);
+  }
+  
+}
+
+
+.nav-previous{
+  &:hover .tecspark-post-icon{
+    color: var(--white-color);
+    background-color: var(--accent-bg);
+  }
+}
+.nav-next{
+  &:hover .tecspark-post-icon{
+    color: var(--white-color);
+    background-color: var(--accent-bg);
+  }
 }
 
