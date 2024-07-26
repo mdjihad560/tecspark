@@ -131,6 +131,9 @@ blockquote {
 .rt-mb-32{
   margin-bottom: 32px;
 }
+.rt-mb-35{
+  margin-bottom: 35px!important;
+}
 .hr-0 {
   margin: 0;
   padding: 0;
@@ -468,7 +471,9 @@ blockquote {
 .dark-bg{
   background-color: var(--dark-bg);
 }
-
+.dark-bg3{
+  background-color: var(--dark-bg3);
+}
 .bg-light1{
   background-color: var(--light-bg1);
 }

@@ -1,41 +1,64 @@
-.skillbar {
-  position: relative;
-  display: inline-block;
-  margin-bottom: 20px;
-  width: 100%;
-  width: 100%;
+.optech-progress-item{
+  margin-bottom: 24px;
   &:last-child{
     margin-bottom: 0;
   }
 }
 
-.skillbar-box {
-  height: 8px;
-  border-radius: 5px;
+
+.progress-title-holder {
   position: relative;
-  background-color: rgba(13, 14, 29, 0.2);
-  
+  text-align: left;
 }
-
-.skillbar-bar {
-  height: 8px;
-  width: 0px;
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  margin-bottom: 0px;
-  background-color: var(--accent-bg);
-
+.progress-bar{
+  overflow: hidden;
+  transition: width 5s ease;
+  background-color: transparent;
 }
-
-span.skill-bar-percent {
-  font-weight: 400;
-}
-
-p.skillbar-lable {
-  margin-bottom: 8px;
+.progress-title {
+  z-index: 100;
+  font-size: 16px;
   font-weight: 600;
-  justify-content: space-between;
-  display: flex;
+  line-height: 1;
+  line-height: 30px;
+  padding: 0 0 10px;
+  display: inline-block;
+  position: relative;
+  letter-spacing: -0.01em;
   color: var(--heading-color);
+  background-color: var(--white-bg);
+  &.bg-gray{
+    background-color: var(--light-bg1);
+  }
+}
+
+.progress-number-wrapper {
+  width: 100%;
+  z-index: 10;
+}
+
+.progress-number-mark {
+  color: var(--heading-color);
+  position: absolute;
+  bottom: 12px;
+  line-height: 1;
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+
+
+.progress-content-outter {
+  height: 8px;
+  border-radius: 2px;
+  background-color: var(--light-bg2);
+}
+
+.progress-content {
+  height: 8px;
+  width: 0%;
+  border-radius: 2px;
+  background-color: var(--accent-bg);
 }

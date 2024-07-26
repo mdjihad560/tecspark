@@ -1,4 +1,4 @@
-.tecspark-accordion{
+.optech-accordion{
   &-wrap{
     border-top: 1px solid var(--light-color1);
     @include max(991px) {
@@ -13,11 +13,11 @@
     &:last-child{
       margin-bottom: 0;
     }
-    &.open .tecspark-accordion-header::before{
+    &.open .optech-accordion-header::before{
       transform: rotate(45deg);
     }
     &.open{
-      .tecspark-accordion-body{
+      .optech-accordion-body{
         display: block;
       }
     }
@@ -59,13 +59,13 @@
   @include max(991px) {
     padding: 80px 0;
   }
-  .tecspark-accordion-column{
+  .optech-accordion-column{
     max-width: 856px;
     margin: 0 auto;
   }
 }
 
-.tecspark-default-content.sm-mw {
+.optech-default-content.sm-mw {
   max-width: 635px;
   text-align: center;
   margin: 0 auto;

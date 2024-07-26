@@ -64,7 +64,7 @@ textarea::placeholder{ /* Most modern browsers support this now. */
 }
 
 // search header v1
-.tecspark-header-search-box {
+.optech-header-search-box {
    position: relative;
    input{
       font-size: 34px;
@@ -94,10 +94,14 @@ button#header-search {
    }
 }
 
-
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
 
 // footer sebscription
-.tecspark-subscription{
+.optech-subscription{
    position: relative;
    margin-top: 25px;
    input{
@@ -110,6 +114,9 @@ button#header-search {
       border: 1px solid var(--light-color1)!important;
       &::placeholder{
          color: #8A8C9A;
+      }
+      &:focus{
+         border: 1px solid var(--accent-color)!important;
       }
    }
    &.two{
@@ -125,26 +132,10 @@ button#header-search {
       }
    }
 }
-button#tecspark-subscription-btn {
-   margin-top: 12px;
+button#optech-subscription-btn {
    width: 100%;
+   margin-top: 12px;
    text-align: center;
-   display: block;
-   &:hover{
-      color: var(--accent-color)!important;
-   }
-   &:before{
-      background-color: var(--white-bg);
-   }
+   justify-content: center;
 }
 
-.btn-hover-dark{
-   button#tecspark-subscription-btn {
-      &:hover{
-         color: var(--white-color)!important;
-      }
-      &:before{
-         background-color: var(--dark-bg);
-      }
-   }
-}

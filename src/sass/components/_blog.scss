@@ -1,11 +1,11 @@
-.tecspark-blog{
+.optech-blog{
   &-wrap{
     border-radius: 18px;
     margin-bottom: 24px;
     transition: all 0.4s;
     overflow: hidden;
     border: 1px solid var(--light-color1);
-    &:hover .tecspark-blog-thumb img{
+    &:hover .optech-blog-thumb img{
       transform: scale(1.1);
     }
     &:hover {
@@ -17,7 +17,7 @@
   &-thumb{
     overflow: hidden;
     img{
-      transition: all 0.8s;
+      transition: all 0.4s;
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -27,6 +27,12 @@
     padding: 40px;
     @include max(991px) {
       padding: 30px;
+    }
+    &.padding-medium{
+      padding: 35px;
+      @include max(991px) {
+        padding: 30px;
+      }
     }
     h2{
       margin-bottom: 15px;
@@ -53,7 +59,7 @@
         display: inline-block;
         &::before{
           content: "";
-          right: 4px;
+          right: 5px;
           top: 5px;
           width: 5px;
           height: 5px;
@@ -77,11 +83,11 @@
   
 }
 
-.tecspark-icon{
+.optech-icon{
   &-btn{
     line-height: 22px;
     font-weight: 600;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     transition: all 0.4s;
     color: var(--accent-color);
@@ -116,8 +122,8 @@
   }
 }
 
-.tecspark-blog-grid{
-  .tecspark-blog-content{
+.optech-blog-grid{
+  .optech-blog-content{
     padding: 28px;
   }
 }
@@ -125,25 +131,32 @@
 
 // blog main card
 
-.tecspark-blog{
+.optech-blog{
   &-wrap2{
     border-radius: 18px;
     margin-bottom: 24px;
     transition: all 0.4s;
     overflow: hidden;
-    &:hover .tecspark-blog-thumb2 img{
+    &:hover .optech-blog-thumb2 img{
       transform: scale(1.1);
     }
   
-    .tecspark-blog-meta ul li a{
-      color: var(--light-color2);
+    .optech-blog-meta ul li {
+      a{
+        color: var(--light-color2);
+      }
+      &::before{
+        right: 5px;
+        background-color: var(--light-color2);
+      }
+      
     }
-    .tecspark-icon-btn{
+    .optech-icon-btn{
       opacity: 0;
       margin-top: -28px;
       color: var(--white-color);
     }
-    &:hover .tecspark-icon-btn{
+    &:hover .optech-icon-btn{
       opacity: 1;
       margin-top: 15px;
     }
@@ -152,7 +165,7 @@
     position: relative;
     overflow: hidden;
     img{
-      transition: all 0.8s;
+      transition: all 0.4s;
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -189,7 +202,7 @@
   }
   &-content2{
     z-index: 3;
-    padding: 28px 28px 24px;
+    padding: 28px;
     position: absolute;
     bottom: 0;
     h4{
@@ -208,10 +221,10 @@
   @include max(767px) {
     display: block;
   }
-  .tecspark-blog-content{
+  .optech-blog-content{
     padding: 28px;
   }
-  .tecspark-blog-thumb{
+  .optech-blog-thumb{
     height: 100%;
   }
 }

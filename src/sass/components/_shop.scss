@@ -1,7 +1,7 @@
-.tecspark-shop{
+.optech-shop{
   &-wrap{
     margin-bottom: 50px;
-    &:hover .tecspark-shop-btn{
+    &:hover .optech-shop-btn{
       opacity: 1;
       bottom: 28px;
       visibility: visible;
@@ -18,7 +18,7 @@
       margin-bottom: 5px;
     }
     h6{
-      font-size: 20px;
+      font-size: 16px;
       color: var(--accent-color);
       del{
         font-weight: 400;
@@ -31,15 +31,12 @@
     bottom: 0;
     left: 28px;
     opacity: 0;
-    padding: 10px;
-    border-radius: 6px;
-    font-weight: 500;
+    padding: 18px;
     text-align: center;
     position: absolute;
     visibility: hidden;
-    transition: all 0.4s;
-    display: inline-block;
     width: calc(100% - 56px);
+    justify-content: center;
     color: var(--white-color)!important;
     background-color: var(--accent-bg);
   }
@@ -60,13 +57,13 @@
 }
 
 // shop details
-.tecspark-tab-slider {
+.optech-tab-slider {
   margin-right: 40px;
   @include max(991px) {
     margin-right: 0;
   }
 }
-ul.tecspark-tabs-menu {
+ul.optech-tabs-menu {
   display: flex;
   gap: 16px;
   margin-top: 16px;
@@ -85,10 +82,10 @@ ul.tecspark-tabs-menu {
       }
     }
   }
-.tecspark-tabs-container {
+.optech-tabs-container {
   overflow: hidden;
 }
-.tecspark-tabs-wrapper {
+.optech-tabs-wrapper {
   position: relative;
   white-space: nowrap;
   img{
@@ -99,13 +96,13 @@ ul.tecspark-tabs-menu {
     }
   }
 }
-.tecspark-tabs-wrapper > * {
+.optech-tabs-wrapper > * {
   display: inline-block;
   width: 100%;
   margin-left: -2px;
 }
 
-.tecspark-details-content{
+.optech-details-content{
   margin-left: 50px;
   padding-top: 100px;
   @include max(1199px) {
@@ -131,7 +128,7 @@ ul.tecspark-tabs-menu {
 
 
 
-.tecspark-product{
+.optech-product{
   &-wrap{
     display: flex;
     gap: 16px;
@@ -167,19 +164,14 @@ ul.tecspark-tabs-menu {
   }
   &-btn{
     width: 100%;
-    font-weight: 500;
-    display: block;
     text-align: center;
     padding: 14px;
-    border-radius: 10px;
     transition: all 0.4s;
+    justify-content: center;
     color: var(--white-color)!important;
     background-color: var(--accent-bg);
     img{
       margin-left: 10px;
-    }
-    &:hover{
-      background-color: var(--dark-bg);
     }
   }
   &-info{
@@ -203,7 +195,7 @@ ul.tecspark-tabs-menu {
   }
 }
 
-.tecspark-product-tab{
+.optech-product-tab{
   ul.nav{
     margin-bottom: 24px;
     border-bottom: 1px solid #E7E7E8;
@@ -241,7 +233,7 @@ ul.tecspark-tabs-menu {
   }
 }
 
-.tecspark-related-product-section {
+.optech-related-product-section {
   padding-bottom: 80px;
   @include max(991px) {
     padding-bottom: 50px;
@@ -251,7 +243,7 @@ ul.tecspark-tabs-menu {
   }
 }
 // End single
-.tecspark-cart-section {
+.optech-cart-section {
   padding: 100px 0 50px;
   @include max(991px) {
     padding: 80px 0 30px;
@@ -260,7 +252,7 @@ ul.tecspark-tabs-menu {
     padding: 80px 0 20px;
   }
 }
-.tecspark-cart-list{
+.optech-cart-list{
   @include max(991px) {
     overflow-x: scroll;
   }
@@ -294,15 +286,15 @@ ul.tecspark-tabs-menu {
       }
     }
   }
-  .tecspark-product-number input {
+  .optech-product-number input {
     height: 52px;
   }
-  .tecspark-product-number {
+  .optech-product-number {
     width: 151px;
   }
 }
 
-.tecspark-cart-thumb {
+.optech-cart-thumb {
   display: flex;
   align-items: center;
   @include max(991px) {
@@ -319,7 +311,7 @@ ul.tecspark-tabs-menu {
     border-radius: 10px;
   }
 }
-.tecspark-cart-footer{
+.optech-cart-footer{
   display: flex;
   align-items: center;
   padding: 28px 0;
@@ -328,7 +320,7 @@ ul.tecspark-tabs-menu {
     display: block;
   }
 }
-.tecspark-cupon-code{
+.optech-cupon-code{
   position: relative;
   width: 415px;
   @include max(767px) {
@@ -347,7 +339,7 @@ ul.tecspark-tabs-menu {
   }
 }
 
-.tecspark-cart-total{
+.optech-cart-total{
   h5{
     margin-bottom: 20px;
   }
@@ -371,13 +363,14 @@ ul.tecspark-tabs-menu {
 
 // End cart
 
-.tecspark-checkout-header {
+.optech-checkout-header {
   
   img{
     margin-right: 10px;
   }
   a{
     color: var(--accent-color);
+    margin-left: 5px;
   }
   display: flex;
   padding: 14px 28px;
@@ -389,7 +382,7 @@ ul.tecspark-tabs-menu {
   }
 }
 
-.tecspark-checkout{
+.optech-checkout{
   &-form{
     h5{
       font-size: 24px;
@@ -416,6 +409,7 @@ ul.tecspark-tabs-menu {
     }
     textarea{
       height: 148px;
+      padding: 15px 20px!important;
     }
     select{
       height: 60px;
@@ -451,7 +445,7 @@ ul.tecspark-tabs-menu {
   }
 }
 
-.tecspark-checkout-field.checkout-additional-information {
+.optech-checkout-field.checkout-additional-information {
   margin-top: 60px;
   @include max(991px) {
     margin-top: 40px;
@@ -462,7 +456,7 @@ input.house-number {
   margin-bottom: 12px;
 }
 
-.tecspark-checkuot-sidebar{
+.optech-checkuot-sidebar{
   @include max(991px) {
     margin-top: 40px;
   }
@@ -480,17 +474,7 @@ input.house-number {
       }
     }
   }
-  h6{
-    display: flex;
-    font-weight: 400;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 25px;
-    font-size: 16px;
-    img{
-      margin-right: 10px;
-    }
-  }
+
   span{
     font-size: 18px;
     font-weight: 600;
@@ -509,8 +493,45 @@ span.total-amount {
   color: #0119FF;
 }
 
-.tecspark-update-cart.blue-btn.w-full{
+.shop-order-btn{
+  margin-top: 40px;
   width: 100%;
+  justify-content: center;
+}
+
+
+.shop-radio-btn input[type=radio] + .radio-label:before {
+  content: "";
+  border-radius: 100%;
+  border: 2px solid var(--accent-color);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: -1px;
+  margin-right: 12px;
+  vertical-align: top;
+  cursor: pointer;
   text-align: center;
-  margin-top: 20px;
+  transition: all 250ms ease;
+}
+
+.shop-radio-btn input[type=radio]:checked + .radio-label:before {
+  background-color: var(--accent-bg);
+  box-shadow: inset 0 0 0 2px #fff;
+}
+.shop-radio-btn {
+  margin: 12px 0 28px;
+  label{
+    display: flex;
+    line-height: 1;
+    cursor: pointer;
+    align-items: center;
+    color: var(--heading-color);
+  }
+}
+.shop-radio-btn input[type=radio] {
+  position: absolute;
+  opacity: 0;
+  display: none;
 }

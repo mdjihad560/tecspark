@@ -4,23 +4,23 @@
  /*--------------------------------------------------------------
   [Table of contents]
 
-TECSPARK PRELOADER JS INIT
-TECSPARK HEADER SEARCH JS INIT
-TECSPARK STICKY MENU JS INIT
-TECSPARK MENU SIDEBAR JS INIT
-TECSPARK SKILLBAR JS INIT
-TECSPARK HERO SLIDER INIT
-TECSPARK FOUR COLUMN SLIDER INIT
-TECSPARK THREE COLUMN SLIDER INIT
-TECSPARK FOUR COLUMN SLIDER TWO INIT
-TECSPARK TWO COLUMN SLIDER INIT
-TECSPARK ONE COLUMN SLIDER INIT
-TECSPARK THREE COLUMN SLIDER TWO INIT
-TECSPARK BRAND SLIDER INIT
-TECSPARK COUNTER JS INIT
-TECSPARK COUNTER JS TWO INIT
-TECSPARK MAP JS
-TECSPARK WOW JS
+optech PRELOADER JS INIT
+optech HEADER SEARCH JS INIT
+optech STICKY MENU JS INIT
+optech MENU SIDEBAR JS INIT
+optech SKILLBAR JS INIT
+optech HERO SLIDER INIT
+optech FOUR COLUMN SLIDER INIT
+optech THREE COLUMN SLIDER INIT
+optech FOUR COLUMN SLIDER TWO INIT
+optech TWO COLUMN SLIDER INIT
+optech ONE COLUMN SLIDER INIT
+optech THREE COLUMN SLIDER TWO INIT
+optech BRAND SLIDER INIT
+optech COUNTER JS INIT
+optech COUNTER JS TWO INIT
+optech MAP JS
+optech WOW JS
   
 -------------------------------------------------------------------*/
   
@@ -39,20 +39,20 @@ TECSPARK WOW JS
 
 
 /*--------------------------------------------------------------
-TECSPARK PRELOADER JS INIT
+optech PRELOADER JS INIT
 --------------------------------------------------------------*/
-$(".tecspark-preloader-wrap").fadeOut(500);
+$(".optech-preloader-wrap").fadeOut(500);
 
 /*--------------------------------------------------------------
-TECSPARK HEADER SEARCH JS INIT
+optech HEADER SEARCH JS INIT
 ------------------------------------------------------------*/
-  $(".tecspark-header-search, .tecspark-header-search-close, .search-overlay").click(function() {
-    $(".tecspark-header-search-section, .search-overlay").toggleClass("open");
+  $(".optech-header-search, .optech-header-search-close, .search-overlay").click(function() {
+    $(".optech-header-search-section, .search-overlay").toggleClass("open");
   });
 
 
 /*--------------------------------------------------------------
-TECSPARK STICKY MENU JS INIT
+optech STICKY MENU JS INIT
 --------------------------------------------------------------*/
 $(window).on('scroll', function(){
   if ($(window).scrollTop() > 50) {
@@ -64,31 +64,29 @@ $(window).on('scroll', function(){
 });
 
 /*--------------------------------------------------------------
-TECSPARK MENU SIDEBAR JS INIT
+optech MENU SIDEBAR JS INIT
 --------------------------------------------------------------*/
-$(".tecspark-header-barger").on("click", function (e) {
-  $(".tecspark-sidemenu-column, .offcanvas-overlay").addClass("active");
+$(".optech-header-barger").on("click", function (e) {
+  $(".optech-sidemenu-column, .offcanvas-overlay").addClass("active");
   event.preventDefault(e);
 });
-$(".tecspark-sidemenu-close, .offcanvas-overlay").on("click", function () {
-    $(".tecspark-sidemenu-column, .offcanvas-overlay").removeClass("active");
+$(".optech-sidemenu-close, .offcanvas-overlay").on("click", function () {
+    $(".optech-sidemenu-column, .offcanvas-overlay").removeClass("active");
 });
 
-/*--------------------------------------------------------------
-TECSPARK SKILLBAR JS INIT
-------------------------------------------------------------*/
 
-var skillbar = $('.skillbar');
-  if (skillbar.is_exist()){
-      skillbar.skillBars({
-      speed: 8000,
-      interval: 100,
-    });
-}
 
 /*--------------------------------------------------------------
-TECSPARK HERO SLIDER INIT
+optech HERO SLIDER INIT
 --------------------------------------------------------------*/
+    /*----------- Global Slider ----------*/
+    $(".global-carousel").each(function () {
+      var carouselSlide = $(this);
+      function d(data) {
+        return carouselSlide.data(data);
+    }
+
+  });
 /*----------- Custom Animaiton For Slider ----------*/
 
 $('[data-ani-duration]').each(function () {
@@ -113,7 +111,7 @@ $('.global-carousel').on('afterChange', function (event, slick, currentSlide, ne
 });
 
 
-var hero_slider = $('.tecspark-hero-slider');
+var hero_slider = $('.optech-hero-slider');
 if(hero_slider.is_exist()){
   hero_slider.slick({
   infinite: true,
@@ -124,51 +122,61 @@ if(hero_slider.is_exist()){
   autoplay: false , 
   speed: 800,
   lazyLoad: 'progressive',
-  prevArrow: '<button class="slide-arrow tecspark-hero-next"><i class="ri-arrow-left-s-line"></i></button>',
-	nextArrow: '<button class="slide-arrow tecspark-hero-prev"><i class="ri-arrow-right-s-line"></i></button>',
+  prevArrow: '<button class="slide-arrow optech-hero-next"><i class="ri-arrow-left-s-line"></i></button>',
+	nextArrow: '<button class="slide-arrow optech-hero-prev"><i class="ri-arrow-right-s-line"></i></button>',
 }).slickAnimation();
 
 
 }
 
 /*--------------------------------------------------------------
-TECSPARK FOUR COLUMN SLIDER INIT
+optech FOUR COLUMN SLIDER INIT
 --------------------------------------------------------------*/
-var four_column_slider = $('.tecspark-4column-slider');
+var four_column_slider = $('.optech-4column-slider');
 if(four_column_slider.is_exist()){
   four_column_slider.slick({
   infinite: true,
-  slidesToShow: 5, 
+  slidesToShow: 4, 
   slidesToScroll: 1,
   arrows: false,
   dots: true,
   autoplay: false , 
   centerMode: true,
-  centerPadding: '150px',
+  centerPadding: '300px',
   responsive: [
     {
       breakpoint: 1600,
       settings: {
-        slidesToShow: 4,
+        slidesToShow: 3,
+        centerPadding: '250px',
       }
     },
   {
     breakpoint: 1399,
     settings: {
       slidesToShow: 3,
+      centerPadding: '150px',
     }
   },
   {
     breakpoint: 1199,
+    settings: {
+      slidesToShow: 3,
+      centerPadding: '100px',
+    }
+  },
+  {
+    breakpoint: 992,
     settings: {
       slidesToShow: 2,
       centerPadding: '100px',
     }
   },
   {
-    breakpoint: 767,
+    breakpoint: 768,
     settings: {
       slidesToShow: 1,
+      centerPadding: '100px',
     }
   },
 
@@ -187,9 +195,9 @@ if(four_column_slider.is_exist()){
 
 
 /*--------------------------------------------------------------
-TECSPARK THREE COLUMN SLIDER INIT
+optech THREE COLUMN SLIDER INIT
 --------------------------------------------------------------*/
-var three_column_slider = $('.tecspark-3column-slider');
+var three_column_slider = $('.optech-3column-slider');
 if(three_column_slider.is_exist()){
   three_column_slider.slick({
   infinite: true,
@@ -232,9 +240,9 @@ if(three_column_slider.is_exist()){
 
 
 /*--------------------------------------------------------------
-TECSPARK FOUR COLUMN SLIDER TWO INIT
+optech FOUR COLUMN SLIDER TWO INIT
 --------------------------------------------------------------*/
-var four_column_slider2 = $('.tecspark-4column-slider2');
+var four_column_slider2 = $('.optech-4column-slider2');
 if(four_column_slider2.is_exist()){
   four_column_slider2.slick({
   infinite: true,
@@ -272,9 +280,9 @@ if(four_column_slider2.is_exist()){
 }
 
 /*--------------------------------------------------------------
-TECSPARK TWO COLUMN SLIDER INIT
+optech TWO COLUMN SLIDER INIT
 --------------------------------------------------------------*/
-var two_column_slider = $('.tecspark-2column-slider');
+var two_column_slider = $('.optech-2column-slider');
 if(two_column_slider.is_exist()){
   two_column_slider.slick({
   infinite: true,
@@ -298,9 +306,9 @@ if(two_column_slider.is_exist()){
 
 
 /*--------------------------------------------------------------
-TECSPARK ONE COLUMN SLIDER INIT
+optech ONE COLUMN SLIDER INIT
 --------------------------------------------------------------*/
-var t_one_column_slider = $('.tecspark-1column-slider');
+var t_one_column_slider = $('.optech-1column-slider');
 if(t_one_column_slider.is_exist()){
   t_one_column_slider.slick({
   infinite: true,
@@ -310,9 +318,8 @@ if(t_one_column_slider.is_exist()){
   dots: false,
   autoplay: false , 
   speed: 800,
-  lazyLoad: 'progressive',
-  prevArrow: '<button class="slide-arrow tecspark-t-next"><i class="ri-arrow-left-s-line"></i></button>',
-	nextArrow: '<button class="slide-arrow tecspark-t-prev"><i class="ri-arrow-right-s-line"></i></button>',
+  prevArrow: '<button class="slide-arrow optech-t-next"><i class="ri-arrow-left-s-line"></i></button>',
+	nextArrow: '<button class="slide-arrow optech-t-prev"><i class="ri-arrow-right-s-line"></i></button>',
 })
 
 
@@ -321,9 +328,9 @@ if(t_one_column_slider.is_exist()){
 
 
 /*--------------------------------------------------------------
-TECSPARK THREE COLUMN SLIDER TWO INIT
+optech THREE COLUMN SLIDER TWO INIT
 --------------------------------------------------------------*/
-var three_column_slider2 = $('.tecspark-3column-slider2');
+var three_column_slider2 = $('.optech-3column-slider2');
 if(three_column_slider2.is_exist()){
   three_column_slider2.slick({
   infinite: true,
@@ -354,25 +361,25 @@ if(three_column_slider2.is_exist()){
 
 
 /*--------------------------------------------------------------
-TECSPARK BRAND SLIDER INIT
+optech BRAND SLIDER INIT
 --------------------------------------------------------------*/
-var tecspark_brand_slider = $('.tecspark-brand-slider');
-if(tecspark_brand_slider.is_exist()){
-  tecspark_brand_slider.slick({
+var optech_brand_slider = $('.optech-brand-slider');
+if(optech_brand_slider.is_exist()){
+  optech_brand_slider.slick({
   infinite: true,
   slidesToShow: 5, 
   slidesToScroll: 1,
   arrows: false,
   dots: false,
-  autoplay: true , 
+  autoplay: true, 
   autoplaySpeed: 0,
-  speed: 10000,
+  speed: 6000,
   cssEase: 'linear',
   pauseOnHover:true,
   adaptiveHeight: true,
   responsive: [
   {
-    breakpoint: 991,
+    breakpoint: 1199,
     settings: {
       slidesToShow: 3,
     }
@@ -391,16 +398,16 @@ if(tecspark_brand_slider.is_exist()){
 
 
 /*--------------------------------------------------------------
-TECSPARK COUNTER JS INIT
+optech COUNTER JS INIT
 --------------------------------------------------------------*/
-var tecspark_counter = $('#tecspark-counter');
-  if(tecspark_counter.is_exist()){
+var optech_counter = $('#optech-counter');
+  if(optech_counter.is_exist()){
       var a = 0;
       $(window).scroll(function() {
 
-        var oTop = $(tecspark_counter).offset().top - window.innerHeight;
+        var oTop = $(optech_counter).offset().top - window.innerHeight;
         if (a == 0 && $(window).scrollTop() > oTop) {
-          $('.tecspark-counter').each(function() {
+          $('.optech-counter').each(function() {
             var $this = $(this),
               countTo = $this.attr('data-percentage');
             $({
@@ -428,16 +435,16 @@ var tecspark_counter = $('#tecspark-counter');
 
 
 /*--------------------------------------------------------------
-TECSPARK COUNTER JS TWO INIT
+optech COUNTER JS TWO INIT
 --------------------------------------------------------------*/
-var tecspark_counter2 = $('#tecspark-counter2');
-  if(tecspark_counter2.is_exist()){
+var optech_counter2 = $('#optech-counter2');
+  if(optech_counter2.is_exist()){
       var a = 0;
       $(window).scroll(function() {
 
-        var oTop = $(tecspark_counter2).offset().top - window.innerHeight;
+        var oTop = $(optech_counter2).offset().top - window.innerHeight;
         if (a == 0 && $(window).scrollTop() > oTop) {
-          $('.tecspark-counter2').each(function() {
+          $('.optech-counter2').each(function() {
             var $this = $(this),
               countTo = $this.attr('data-percentage');
             $({
@@ -478,7 +485,7 @@ $(window).on("load" ,function(){
   }); // End window LODE
 
 /*--------------------------------------------------------------
-TECSPARK MAP JS
+optech MAP JS
 ------------------------------------------------------------*/
 var google_map = $('#map');
 if(google_map.is_exist()){
@@ -503,11 +510,11 @@ if(google_map.is_exist()){
         position: new google.maps.LatLng(40.6700, -73.9400),
         map: map,
         // icon: 'assets/images/all-img/contact/map.png',
-        title: 'tecspark'
+        title: 'optech'
       });
       var contentString = '<div id="content">' +
           '<div id="tpw">' +
-          '<h3>tecspark' +
+          '<h3>optech' +
           '</div>';
 
       var infowindow = new google.maps.InfoWindow({
@@ -527,7 +534,7 @@ if(google_map.is_exist()){
 }
 
 /*--------------------------------------------------------------
-TECSPARK WOW JS
+optech WOW JS
 ------------------------------------------------------------*/
 var wow = new WOW({
   mobile: false,       // default

@@ -4,20 +4,27 @@
 
 {% include "../templates/layout/header-footer/main-header.html" %} 
 
-<div class="tecspark-breadcrumb" style="background-image: url(assets/images/breadcrumb/breadcrumb.png)">
+<div class="optech-breadcrumb" style="background-image: url(assets/images/breadcrumb/breadcrumb.png)">
   <div class="container">
-    {% include "../templates/components/breadcrumbs/breadcrumbs.html" %}
+    <h1 class="post__title">{{page_title}}</h1>
+    <nav class="breadcrumbs">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li aria-current="page"> {{page_title}}</li>
+        </ul>
+    </nav>
   </div>
 </div>
 <!-- End breadcrumb -->
 
-<div class="section tecspark-section-padding-top">
+<div class="section optech-section-padding-top">
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
-        <div class="tecspark-tab-slider">
-          <div class="tecspark-tabs-container">
-            <div class="tecspark-tabs-wrapper">
+        <div class="optech-tab-slider">
+          <div class="optech-tabs-container">
+            <div class="optech-tabs-wrapper">
               <div id="item1" class="tabContent">
                 <img src="assets/images/shop/shop01.png" alt="">
               </div>
@@ -29,7 +36,7 @@
               </div>
             </div>
           </div>
-          <ul class="tecspark-tabs-menu">
+          <ul class="optech-tabs-menu">
             <li class="active">
               <a href="#item1">
                 <img src="assets/images/shop/shop01.png" alt="">
@@ -50,19 +57,19 @@
         </div>
       </div>
       <div class="col-lg-6">
-        <div class="tecspark-details-content">
+        <div class="optech-details-content">
           <h2>Cellular Smart Watch</h2>
           <h6>$249.00</h6>
           <p>We are architects of innovation, trailblazers of technological advancement, and partners in your success. As a dynamic and forward-thinking organization</p>
-          <div class="tecspark-product-wrap">
-            <div class="tecspark-product-number">
-              <span class="tecspark-product-minus"><i class="ri-subtract-line"></i></span>
+          <div class="optech-product-wrap">
+            <div class="optech-product-number">
+              <span class="optech-product-minus"><i class="ri-subtract-line"></i></span>
               <input type="text" value="1"/>
-              <span class="tecspark-product-plus"><i class="ri-add-line"></i></span>
+              <span class="optech-product-plus"><i class="ri-add-line"></i></span>
             </div>
-            <a class="tecspark-product-btn" href="">Add to Cart</a>
+            <a class="optech-product-btn" href="#" data-text="Add to Cart"><span class="btn-wraper">Add to Cart</span></a>
           </div>
-          <div class="tecspark-product-info">
+          <div class="optech-product-info">
             <h5>Quick info</h5>
             <ul>
               <li><span>Category: </span><a href="">Smart Watch</a></li>
@@ -76,9 +83,9 @@
 </div>
 <!-- End section -->
 
-<div class="section tecspark-section-padding">
+<div class="section optech-section-padding">
   <div class="container">
-    <div class="tecspark-product-tab">
+    <div class="optech-product-tab">
       <ul class="nav nav-pills" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
           <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Description</button>
@@ -106,65 +113,65 @@
 </div>
 <!-- End section -->
 
-<div class="tecspark-related-product-section">
+<div class="optech-related-product-section">
   <div class="container">
-    <div class="tecspark-section-title center">
+    <div class="optech-section-title center">
       <h2>Related products</h2>
     </div>
     <div class="row">
       <div class="col-xl-3 col-lg-4 col-md-6">
-        <div class="tecspark-shop-wrap">
-          <div class="tecspark-shop-thumb">
+        <div class="optech-shop-wrap">
+          <div class="optech-shop-thumb">
             <a href="single-shop.html">
               <img src="assets/images/shop/shop01.png" alt="">
             </a>
-            <a class="tecspark-shop-btn" href="my-cart.html">Add to Cart</a>
+            <a class="optech-shop-btn" href="my-cart.html" data-text="Add to Cart"><span class="btn-wraper">Add to Cart</span></a>
           </div>
-        <div class="tecspark-shop-data">
+        <div class="optech-shop-data">
           <a href="single-shop.html"><h5>Black Headphone</h5></a>
           <h6>$39.00 <del>$39.00</del></h6>
         </div>
       </div>
       </div>
       <div class="col-xl-3 col-lg-4 col-md-6">
-        <div class="tecspark-shop-wrap">
-          <div class="tecspark-shop-thumb">
+        <div class="optech-shop-wrap">
+          <div class="optech-shop-thumb">
             <a href="single-shop.html">
               <img src="assets/images/shop/shop2.png" alt="">
             </a>
-            <a class="tecspark-shop-btn" href="my-cart.html">Add to Cart</a>
-            <a class="tecspark-shop-badge" href="#">Sale</a>
+            <a class="optech-shop-btn" href="my-cart.html" data-text="Add to Cart"><span class="btn-wraper">Add to Cart</span></a>
+            <a class="optech-shop-badge" href="#">Sale</a>
           </div>
-        <div class="tecspark-shop-data">
+        <div class="optech-shop-data">
           <a href="single-shop.html"><h5>Meta VR Headset</h5></a>
           <h6>$39.00</h6>
         </div>
       </div>
       </div>
       <div class="col-xl-3 col-lg-4 col-md-6">
-        <div class="tecspark-shop-wrap">
-          <div class="tecspark-shop-thumb">
+        <div class="optech-shop-wrap">
+          <div class="optech-shop-thumb">
             <a href="single-shop.html">
               <img src="assets/images/shop/shop3.png" alt="">
             </a>
-            <a class="tecspark-shop-btn" href="my-cart.html">Add to Cart</a>
+            <a class="optech-shop-btn" href="my-cart.html" data-text="Add to Cart"><span class="btn-wraper">Add to Cart</span></a>
           </div>
-        <div class="tecspark-shop-data">
+        <div class="optech-shop-data">
           <a href="single-shop.html"><h5>Cellular Smart Watch</h5></a>
           <h6>$249.00</h6>
         </div>
       </div>
       </div>
       <div class="col-xl-3 col-lg-4 col-md-6">
-        <div class="tecspark-shop-wrap">
-          <div class="tecspark-shop-thumb">
+        <div class="optech-shop-wrap">
+          <div class="optech-shop-thumb">
             <a href="single-shop.html">
               <img src="assets/images/shop/shop4.png" alt="">
             </a>
-            <a class="tecspark-shop-btn" href="my-cart.html">Add to Cart</a>
-            <a class="tecspark-shop-badge" href="#">Sale</a>
+            <a class="optech-shop-btn" href="my-cart.html" data-text="Add to Cart"><span class="btn-wraper">Add to Cart</span></a>
+            <a class="optech-shop-badge" href="#">Sale</a>
           </div>
-        <div class="tecspark-shop-data">
+        <div class="optech-shop-data">
           <a href="single-shop.html"><h5>Portable Projector</h5></a>
           <h6>$69.00</h6>
         </div>

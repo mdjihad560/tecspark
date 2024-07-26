@@ -32,7 +32,7 @@
 	fill: none; 
 }
 .progress-wrap svg.progress-circle path {
-	stroke: #0D0E1D; /* --- Lijn progres kleur --- */
+	stroke: var(--accent-color); /* --- Lijn progres kleur --- */
 	stroke-width: 4;
 	box-sizing:border-box;
 	-webkit-transition: all 200ms linear;
@@ -40,13 +40,13 @@
 }
 
 .top-arrow {
-	top: 50%;
+	top: 54%;
 	left: 50%;
 	position: absolute;
 	transform: translate(-50%, -50%);
 	line-height: 1px;
 	i{
 		font-size: 36px;
-		color: var(--heading-color);
+		color: var(--accent-color);
 	}
 }

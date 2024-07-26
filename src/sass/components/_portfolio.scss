@@ -1,6 +1,6 @@
 
 
-.tecspark-portfolio{
+.optech-portfolio{
   &-wrap{
     margin-bottom: 24px;
     text-align: center;
@@ -10,7 +10,7 @@
     overflow: hidden;
     border-radius: 18px;
     img{
-      transition: all 0.8s;
+      transition: all 0.4s;
     }
     &:hover img{
       transform: scale(1.1);
@@ -42,7 +42,7 @@
     &:hover::after{
       opacity: 1;
     }
-    &:hover .tecspark-portfolio-btn{
+    &:hover .optech-portfolio-btn{
       opacity: 1;
       transform: translate(-50%, -50%) scale(1) ;
     }
@@ -55,7 +55,7 @@
     position: absolute;
     transition: all 0.4s;
     h4{
-      margin-bottom: 5px;
+      margin-bottom: 4px;
       color: var(--white-color);
     }
     p{
@@ -71,45 +71,87 @@
     display: flex;
     align-items: center;
     border-radius: 6px;
-    transform: scale(0);
     justify-content: center;
-    transition: all 0.6s;
+    transition: all 0.4s;
     position: absolute;
     z-index: 3;
+    padding: 18px;
+    overflow: hidden;
+    font-size: 30px;
     transform: translate(-50%, -50%) scale(0);
     background-color: var(--white-bg);
     @include max(767px) {
       margin: 0 auto 50px;
     }
-    
     i{
-      font-size: 30px;
       color: var(--accent-color);
+    }
+    .p-btn-wraper{
+      line-height: 1;
+      transition: opacity .2s, transform .2s;
+      transition-timing-function: cubic-bezier(.455,.03,.515,.955);
+    }
+    &:hover .p-btn-wraper{
+      transform: translateY(-150%);
+      opacity: 0;
+    }
+    &::before{
+      position: absolute;
+      content: "";
+      border-radius: inherit;
+      -webkit-transition: all .4s ease;
+      transition: all .4s ease;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-size: 102% 102%;
+      opacity: 0;
+    }
+    &:hover::before{
+      opacity: 1;
+    }
+    &::after{
+      content: "\ea70";
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      opacity: 0;
+      transform: translate(0, 100%);
+      transition: opacity .2s, transform .2s;
+      transition-timing-function: cubic-bezier(.455,.03,.515,.955);
+      white-space: nowrap;
+      font-family: 'remixicon' !important;
+    }
+    &:hover::after{
+      transform: translate(0%, -50%);
+      opacity: 1;
     }
   }
 
 }
 
-.tecspark-center-btn {
+.optech-center-btn {
   text-align: center;
   margin-top: 28px;
 }
 // end v1
 
 
-.tecspark-portfolio{
+.optech-portfolio{
   &-wrap2{
     overflow: hidden;
     border-radius: 18px;
     background-color: var(--white-bg);
-    &:hover .tecspark-portfolio-btn2{
+    &:hover .optech-portfolio-btn2{
       background-color: var(--accent-bg);
     }
     
-    &:hover .tecspark-portfolio-btn2 i{
+    &:hover .optech-portfolio-btn2 i{
       color: var(--white-color);
     }
-    &:hover .tecspark-portfolio-thumb2 img{
+    &:hover .optech-portfolio-thumb2 img{
       transform: scale(1.1);
     }
   }
@@ -117,12 +159,12 @@
     position: relative;
     overflow: hidden;
     img{
-      transition: all 0.8s;
+      transition: all 0.4s;
     }
   }
   &-data2{
     h4{
-      margin-bottom: 5px;
+      margin-bottom: 4px;
     }
     &-wrap{
       display: flex;
@@ -139,12 +181,60 @@
     align-items: center;
     border-radius: 6px;
     justify-content: center;
-    transition: all 0.6s;
+    transition: all 0.4s;
     z-index: 3;
+    padding: 18px;
+    overflow: hidden;
+    position: relative;
     background-color: var(--light-bg2);
     i{
       font-size: 30px;
       color: var(--heading-color);
+    }
+
+    .p-btn-wraper{
+      line-height: 1;
+      transition: opacity .2s, transform .2s;
+      transition-timing-function: cubic-bezier(.455,.03,.515,.955);
+    }
+    &:hover .p-btn-wraper{
+      transform: translateY(-150%);
+      opacity: 0;
+    }
+    &::before{
+      position: absolute;
+      content: "";
+      border-radius: inherit;
+      -webkit-transition: all .4s ease;
+      transition: all .4s ease;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-size: 102% 102%;
+      opacity: 0;
+    }
+    &:hover::before{
+      opacity: 1;
+    }
+    &::after{
+      content: "\ea70";
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      opacity: 0;
+      color: var(--white-color);
+      font-size: 30px;
+      transform: translate(0, 100%);
+      transition: opacity .2s, transform .2s;
+      transition-timing-function: cubic-bezier(.455,.03,.515,.955);
+      white-space: nowrap;
+      font-family: 'remixicon' !important;
+    }
+    &:hover::after{
+      transform: translate(0%, -50%);
+      opacity: 1;
     }
   }
 
@@ -154,12 +244,12 @@
 
 
 // start portfolio details
-.tecspark-pd-wrap{
+.optech-pd-wrap{
   padding: 50px 0 100px;
   @include max(991px) {
     padding: 40px 0 80px;
   }
-  .tecspark-icon-list{
+  .optech-icon-list{
     margin-bottom: 40px;
     @include max(991px) {
       margin-bottom: 24px;
@@ -167,7 +257,7 @@
 
   }
 }
-.tecspark-pd-content-item{
+.optech-pd-content-item{
   margin-bottom: 24px;
   &:last-child{
     margin-bottom: 0;
@@ -187,7 +277,7 @@
   }
  
 }
-.tecspark-pd-sidebar{
+.optech-pd-sidebar{
   &-wrap{
     margin-left: 30px;
     position: sticky;
@@ -197,7 +287,7 @@
       margin-top: 40px;
       position: static;
     }
-    .tecspark-social-icon-box{
+    .optech-social-icon-box{
       margin-top: 24px;
     }
   }
@@ -227,7 +317,7 @@
 }
 
 
-.tecspark-post {
+.optech-post {
   &-navigation2{
     display: flex;
     align-items: center;
@@ -238,19 +328,19 @@
       flex-wrap: wrap;
       gap: 24px;
     }
-    .nav-previous, 
-    .nav-next{
+    .p-nav-previous, 
+    .p-nav-next{
       display: flex;
       gap: 16px;
     }
-    .nav-next{
+    .p-nav-next{
       text-align: right;
     }
   }
   &-data{
     p{
       font-weight: 400;
-      margin-bottom: 5px;
+      margin-bottom: 4px;
       color: var(--body-color);
     }
   }
@@ -264,21 +354,32 @@
     transition: all 0.4s;
     justify-content: center;
     background-color: var(--light-bg2);
+    i{
+      transition: all 0.4s;
+      font-size: 22px;
+      color: var(--heading-color);
+    }
   }
   
 }
 
 
-.nav-previous{
-  &:hover .tecspark-post-icon{
+.p-nav-previous{
+  &:hover .optech-post-icon{
     color: var(--white-color);
     background-color: var(--accent-bg);
   }
+  &:hover .optech-post-icon i{
+    color: var(--white-color);
+  }
 }
-.nav-next{
-  &:hover .tecspark-post-icon{
+.p-nav-next{
+  &:hover .optech-post-icon{
     color: var(--white-color);
     background-color: var(--accent-bg);
+  }
+  &:hover .optech-post-icon i{
+    color: var(--white-color);
   }
 }
 

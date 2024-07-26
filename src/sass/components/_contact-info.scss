@@ -1,5 +1,5 @@
 // header info
-.tecspark-header{
+.optech-header{
   &-info{
     &-wrap{
       display: flex;
@@ -48,11 +48,12 @@
 }
 // End header info
 
-.tecspark-infobox{
+.optech-infobox{
   &-item{
     padding: 30px;
     display: flex;
     gap: 20px;
+    align-items: center;
     margin-bottom: 24px;
     border-radius: 10px;
     background-color: var(--dark-bg2);
@@ -62,7 +63,7 @@
     }
     &.light-color{
       background-color: var(--light-bg1);
-      .tecspark-infobox-data {
+      .optech-infobox-data {
         p{
           color: var(--body-color);
         }
@@ -90,6 +91,7 @@
   &-data{
     p{
       margin-bottom: 5px;
+      line-height: 24px;
       color: var(--light-color2);
     }
     h5{
@@ -104,9 +106,12 @@
   @include max(991px) {
     padding-bottom: 56px;
   }
+  @include max(767px) {
+    padding-bottom: 40px;
+  }
 }
 
-.tecspark-subscription-column{
+.optech-subscription-column{
   @include max(991px) {
     margin-top: 40px;
   }
@@ -115,7 +120,7 @@
 // End footer two
 
 // footer info
-.tecspark-footer{
+.optech-footer{
   &-info{
     ul{
       li{
@@ -157,7 +162,7 @@
 // End footer info
 
 // start contact info main
-.tecspark-contact-info{
+.optech-contact-info{
   margin-bottom: 40px;
   i{
     width: 48px;

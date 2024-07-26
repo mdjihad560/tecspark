@@ -12,6 +12,7 @@ $heading-font: "Sora", sans-serif !default;
   --light-color2: #CED0DF;
   --dark-bg: #040D43;
   --dark-bg2: #1E2656;
+  --dark-bg3: #0A165E;
   --white-bg: #ffffff;
   --accent-bg: #2B4DFF;
   --light-bg1: #F5F6F7;
@@ -48,9 +49,9 @@ $bodyfontScale: (
 
 // button font size
 $button_font_size: 16px;
-$buton_line_height: 24px;
+$buton_line_height: 1;
 $buton_border_radius: 6px;
-$button_padding: 18px 28px;
+$button_padding: 22px 27.3px;
 $button_font_weight: 600;
 $button_font_family: $body-font;
 

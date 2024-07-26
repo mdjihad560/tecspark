@@ -1,35 +1,50 @@
-.tecspark-shape1 {
+.optech-shape1 {
   position: absolute;
-  top: 30px;
+  top: 70px;
   right: -82px;
   z-index: -1;
+  @include max(991px) {
+    display: none;
+  }
 }
 
-.tecspark-shape2 {
+.optech-shape2 {
   position: absolute;
   bottom: -92px;
   left: 200px;
   z-index: -1;
+  @include max(991px) {
+    display: none;
+  }
 }
 
 
-.tecspark-shape3 {
+.optech-shape3 {
   position: absolute;
-  top: 55px;
-  left: -127px;
+  top: 40px;
+  left: -85px;
   z-index: -1;
+  @include max(991px) {
+    display: none;
+  }
 }
 
-.tecspark-shape4 {
+.optech-shape4 {
   position: absolute;
   bottom: -92px;
-  left: 214px;
+  left: 50%;
   z-index: -1;
+  @include max(991px) {
+    display: none;
+  }
 }
 
-.tecspark-shape5 {
+.optech-shape5 {
   position: absolute;
   top: 70px;
   left: -83px;
   z-index: -1;
+  @include max(991px) {
+    display: none;
+  }
 }

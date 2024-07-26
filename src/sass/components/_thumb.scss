@@ -1,4 +1,4 @@
-.tecspark-thumb{
+.optech-thumb{
   z-index: 0;
   position: relative;
   @include max(767px) {
@@ -20,12 +20,12 @@
   }
   &-position2 {
     position: absolute;
-    width: 64%;
+    width: 69%;
     bottom: -100px;
     left: -90px;
     @include max(991px) {
       bottom: -75px;
-      right: -34px;
+      left: -30px;
       width: 40%;
     }
     @include max(767px) {
@@ -37,6 +37,9 @@
     width: 64%;
     bottom: -100px;
     left: -120px;
+    @include max(1230px) {
+      left: -80px;
+    }
     @include max(991px) {
       bottom: -75px;
       left: 0;
@@ -50,7 +53,7 @@
 .extra-mr{
   margin-right: 150px;
   @include max(1399px) {
-    margin-right: 70px;
+    margin-right: 115px;
   }
   @include max(991px) {
     margin-right: 0px;
@@ -62,9 +65,12 @@
   }
 }
 .extra-ml{
-  margin-left: 150px;
+  margin-left: 135px;
   @include max(1399px) {
-    margin-left: 70px;
+    margin-left: 130px;
+  }
+  @include max(1199px) {
+    margin-left: 115px;
   }
   @include max(991px) {
     margin-left: 0px;
@@ -92,3 +98,26 @@
 }
 
 // End thumb v1
+.clip-path{
+  &-lg{
+    &-one{
+      img{
+        border-radius: 95px 30px 90px 30px;
+        clip-path: polygon(15% 0, 100% 0, 100% 100%, 100% 85%, 85% 100%, 0% 100%, 0 100%, 0 15%);
+
+    
+      }
+    }
+  }
+
+  &-sm{
+    &-one{
+      
+      border: 10px solid #fff;
+      border-radius: 95px 30px 90px 30px;
+        clip-path: polygon(20% 0,100% 0,100% 100%,100% 80%,80% 100%,0 100%,0 100%,0 20%);
+    }
+  }
+ 
+  
+}

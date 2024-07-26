@@ -1,4 +1,4 @@
-.tecspark-navigation {
+.optech-navigation {
   padding-top: 56px;
   text-align: center;
   @include max(991px) {
@@ -11,14 +11,14 @@
   }
 }
 
-.tecspark-navigation span.current, 
+.optech-navigation span.current, 
 .page-links .current {
   cursor: not-allowed;
   background-color: var(--accent-color);
   color: var(--white-color);
 }
-.tecspark-navigation a, 
-.tecspark-navigation span, 
+.optech-navigation a, 
+.optech-navigation span, 
 .page-links a, 
 .page-links span {
   height: 60px;
@@ -38,7 +38,7 @@
   }
 }
 
-.tecspark-navigation a:hover, 
+.optech-navigation a:hover, 
 .page-links a:hover {
   background-color: var(--accent-bg);
   color: var(--white-color);

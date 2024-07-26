@@ -1,12 +1,13 @@
 // bootstrap button style
 
-.tecspark-default-btn, 
-#tecspark-default-btn,
-button#tecspark-subscription-btn,
-button#tecspark-main-form-btn,
-#tecspark-hero-form-btn,
-#tecspark-team-form-btn,
-.tecspark-pricing-btn {
+.optech-default-btn, 
+#optech-default-btn,
+button#optech-subscription-btn,
+button#optech-main-form-btn,
+#optech-hero-form-btn,
+#optech-team-form-btn,
+.optech-shop-btn,
+.optech-product-btn {
   font-size: $button_font_size;
   line-height: $buton_line_height;
   padding: $button_padding;
@@ -14,7 +15,6 @@ button#tecspark-main-form-btn,
   font-weight: $button_font_weight;
   font-family: $button_font_family;
   width: fit-content;
-  z-index: 1;
   white-space: nowrap;
   text-overflow: ellipsis;
   display: inline-flex;
@@ -23,66 +23,69 @@ button#tecspark-main-form-btn,
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
-  color: var(--white-color);
+  color: var(--white-color)!important;
   background-color: var(--accent-bg);
   z-index: 0;
   overflow: hidden;
   position:relative;
+  letter-spacing: -0.01em;
   transform-style: preserve-3d;
-  &:hover{
-    color: var(--white-color);
+  .btn-wraper{
+    transition: opacity .2s, transform .2s;
+    transition-timing-function: cubic-bezier(.455,.03,.515,.955);
+  }
+  &:hover .btn-wraper{
+    transform: translateY(-150%);
+    opacity: 0;
   }
   &::before{
-    transition-duration: 800ms;
     position: absolute;
-    width: 200%;
-    height: 200%;
     content: "";
-    top: 110%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    border-radius: 50%;
+    border-radius: inherit;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
     z-index: -1;
-    background-color: var(--dark-bg);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: 102% 102%;
+    opacity: 0;
   }
-  &:hover:before{
-    top: -40%;
+  &:hover::before{
+    opacity: 1;
   }
-  &.tecspark-white-btn{
+  &::after{
+    content: attr(data-text);
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    opacity: 0;
+    transform: translate(0, 100%);
+    transition: opacity .2s, transform .2s;
+    transition-timing-function: cubic-bezier(.455,.03,.515,.955);
+    white-space: nowrap;
+  }
+  &:hover::after{
+    transform: translate(0%, -50%);
+    opacity: 1;
+  }
+  // &:hover:before{
+  //   top: -40%;
+  // }
+  &.optech-white-btn{
     color: var(--heading-color)!important;
     background-color: var(--white-color);
-    &:hover{
-      color: var(--white-color)!important;
-    }
-    &::before{
-      background-color: var(--accent-bg);
-    }
-    &.hover-default{
-      &::before{
-        background-color: var(--dark-bg);
-      }
-    }
   }
   
-  &.tecspark-light-btn{
+  &.optech-light-btn{
     color: var(--heading-color)!important;
     background-color: var(--light-bg2);
-    &:hover{
-      color: var(--white-color)!important;
-    }
   }
-  &.tecspark-header-btn{
-    padding: 14px 24px;
+  &.optech-header-btn{
+    padding: 18px 24.8px;
   }
-  &.hover-white{
-    &:hover{
-      color: var(--accent-color);
-    }
-    &::before{
-      background-color: var(--white-bg);
-    }
-  }
+
   &.disabled,
   &:disabled {
     opacity: 1;

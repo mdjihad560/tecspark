@@ -1,4 +1,4 @@
-.tecspark-breadcrumb{
+.optech-breadcrumb{
   z-index: 0;
   text-align: center;
   padding: 310px 0 160px;
@@ -19,16 +19,19 @@
 }
 
 h1.post__title{
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   color: var(--white-color);
 }
 
 .breadcrumbs{
   ul{
+    display: flex;
+    text-align: left;
+    justify-content: center;
     li{
-      line-height: 1;
+      line-height: 24px;
       z-index: 0;
-      padding: 0 15px;
+      padding: 0 20px;
       position: relative;
       display: inline-block;
       color: var(--white-color);
@@ -40,23 +43,26 @@ h1.post__title{
       }
       &:before {
         content: "\ea6e";
-        right: -14px;
-        top: 0px;
+        right: -12px;
+        top: 6px;
+        font-size: 20px;
         z-index: -1;
+        line-height: 12px;
         position: absolute;
         font-family: 'remixicon';
+        color: var(--light-color2);
       }
       &:last-child:before{
         content: none;
       }
       a{
-        color: #CED0DF;
+        color: var(--light-color2);
       }
     }
   }
 }
 
-.tecspark-errors{
+.optech-errors{
   &-section{
     padding: 330px 0 130px;
     @include max(991px) {

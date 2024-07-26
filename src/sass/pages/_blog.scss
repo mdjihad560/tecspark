@@ -1,5 +1,5 @@
 // sidebar
-.tecspark-blog{
+.optech-blog{
   &-sidebar{
     padding-left: 20px;
     @include max(991px) {
@@ -21,7 +21,7 @@
   }
 }
 
-.tecspark-search-box{
+.optech-search-box{
   position: relative;
   input{
     padding: 15px!important;
@@ -39,7 +39,7 @@
   }
 }
 
-button#tecspark-search-btn {
+button#optech-search-btn {
   position: absolute;
   left: 20px;
   top: 14px;
@@ -49,7 +49,7 @@ button#tecspark-search-btn {
   }
 }
 
-.tecspark-blog{
+.optech-blog{
   &-categorie{
     ul{
       li{
@@ -96,7 +96,7 @@ button#tecspark-search-btn {
   
 }
 
-.tecspark-recent-post {
+.optech-recent-post {
   &-item{
     gap: 20px;
     display: grid;
@@ -115,7 +115,7 @@ button#tecspark-search-btn {
   &-data{
     p{
       font-weight: 600;
-      margin-bottom: 5px;
+      margin-bottom: 3px;
       line-height: 28px;
       font-size: 18px;
       color: var(--heading-color);
@@ -126,6 +126,7 @@ button#tecspark-search-btn {
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
+      letter-spacing: -0.01em;
     }
     span{
       font-size: 14px;
@@ -137,7 +138,7 @@ button#tecspark-search-btn {
 
 // blog single
 
-.tecspark-single-post{
+.optech-single-post{
   &-meta{
     padding-top: 35px;
     padding-bottom: 15px;
@@ -164,7 +165,7 @@ button#tecspark-search-btn {
     }
   }
 }
-.tecspark-single-thumb{
+.optech-single-thumb{
   padding: 16px 0;
   img{
     margin-bottom: 24px;
@@ -173,14 +174,14 @@ button#tecspark-search-btn {
 }
 
 
-.tecspark-single-post-tag{
+.optech-single-post-tag{
   &-wrap{
     margin-top: 40px;
     margin-bottom: 52px;
     @include max(991px) {
       margin: 30px 0;
     }
-    .tecspark-blog-tags{
+    .optech-blog-tags{
       ul{
         li{
           a{
@@ -195,9 +196,9 @@ button#tecspark-search-btn {
   }
 }
 
-.tecspark-post-navigation {
+.optech-post-navigation {
   display: flex;
-  padding: 0 0 30px;
+  padding: 0 0 24px;
   flex-wrap: wrap;
   gap: 24px;
   justify-content: space-between;
@@ -205,6 +206,9 @@ button#tecspark-search-btn {
 }
 a.nav-next,
 a.nav-previous{
+  display: flex;
+  line-height: 1;
+  align-items: center;
   font-weight: 600;
   transition: all 0.4s;
   color: var(--accent-color);
@@ -213,14 +217,14 @@ a.nav-previous{
   }
   i{
     margin-left: 5px;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
   }
 }
 
 .nav-previous{
   i{
-    margin-left: 0;
+    margin-left: 0!important;
     margin-right: 5px;
   }
 }
@@ -228,7 +232,7 @@ a.nav-previous{
 
 // comment
 
-.tecspark-post-comment {
+.optech-post-comment {
   padding-top: 60px;
   li{
     margin-bottom: 40px;
@@ -279,7 +283,7 @@ li.children {
     padding-left: 30px;
   }
 }
-a.tecspark-comment-reply {
+a.optech-comment-reply {
   font-weight: 600;
   transition: all 0.4s;
   color: var(--accent-color);
@@ -287,14 +291,15 @@ a.tecspark-comment-reply {
   align-items: center;
   margin-top: 10px;
   i{
-    margin-right: 10px;
+    margin-right: 6px;
+    font-size: 20px;
     path{
       fill: var(--accent-color);
     }
   }
 }
 
-.tecspark-comment-box{
+.optech-comment-box{
   padding-top: 40px;
   @include max(991px) {
     padding-top: 10px;
@@ -307,11 +312,11 @@ a.tecspark-comment-reply {
     }
   }
 }
-.tecspark-comment-form{
+.optech-comment-form{
   margin-bottom: 24px;
 }
 
-.tecspark-check input {
+.optech-check input {
   padding: 0;
   height: initial;
   width: initial;
@@ -320,13 +325,13 @@ a.tecspark-comment-reply {
   cursor: pointer;
 }
 
-.tecspark-check label {
+.optech-check label {
   position: relative;
   cursor: pointer;
   margin-bottom: 40px;
 }
 
-.tecspark-check label:before {
+.optech-check label:before {
   content: "";
   -webkit-appearance: none;
   background-color: transparent;
@@ -340,7 +345,7 @@ a.tecspark-comment-reply {
   margin-top: -5px;
 }
 
-.tecspark-check input:checked + label:after {
+.optech-check input:checked + label:after {
   content: "";
   display: block;
   position: absolute;

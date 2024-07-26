@@ -1,6 +1,6 @@
 
 
-.tecspark-pricing{
+.optech-pricing{
   &-wrap{
     margin-bottom: 24px;
     padding: 28px;
@@ -8,19 +8,22 @@
     border: 1px solid var(--light-color1);
     &.active{
       background-color: var(--accent-bg);
-      .tecspark-pricing-btn{
+      .optech-pricing-btn{
         background-color: var(--white-bg);
+        &:hover{
+          background-color: var(--dark-bg);
+        }
       }
       p {
         color: var(--light-color2);
       }
-      .tecspark-pricing-header{
+      .optech-pricing-header{
         h4{
           color: var(--white-color);
         }
        
       }
-      .tecspark-pricing-price{
+      .optech-pricing-price{
         h2{
           color: var(--white-color);
         }
@@ -28,7 +31,7 @@
           color: var(--light-color2);
         }
       }
-      .tecspark-pricing-feature{
+      .optech-pricing-feature{
         ul{
           li{
             color: var(--white-color);
@@ -67,10 +70,20 @@
   &-btn{
     width: 100%;
     display: block;
+    font-weight: 600;
+    padding: 18px;
+    transition: all 0.4s;
     text-align: center;
+    line-height: 24px;
+    border-radius: 6px;
+    letter-spacing: -0.01em;
+    justify-content: center;
     color: var(--heading-color);
     background-color: var(--light-bg2);
-    
+    &:hover{
+      color: var(--white-color);
+      background-color: var(--dark-bg);
+    }
   }
   &-feature{
     margin-bottom: 40px;
@@ -96,16 +109,16 @@
 
 }
 
-.tecspark-pricing2{
+.optech-pricing2{
   border: none;
   background-color: var(--white-bg);
-  .tecspark-pricing-price {
+  .optech-pricing-price {
     margin-bottom: 15px;
 }
-.tecspark-pricing-feature{
+.optech-pricing-feature{
   margin: 0;
 }
-.tecspark-pricing-btn{
+.optech-pricing-btn{
   margin-bottom: 28px;
 }
 

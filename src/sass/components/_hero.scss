@@ -1,4 +1,4 @@
-.tecspark-extra-mt {
+.optech-extra-mt {
   margin-top: 40px;
   @include max(767px) {
     margin-top: 30px;
@@ -10,21 +10,23 @@
   background-position: center;
 }
 
-.tecspark-hero {
+.optech-hero {
   &-section{
     padding: 260px 0 150px;
     @include max(991px) {
       padding: 220px 0 100px;
     }
     @include max(767px) {
-      padding: 170px 0 80px;
+      padding: 200px 0 100px;
     }
+
 
   }
   &-content{
     h5{
       color: var(--white-color);
       margin-bottom: 15px;
+      font-weight: 500;
     }
     @include max(991px) {
       text-align: center;
@@ -75,6 +77,16 @@
         }
       }
     }
+
+    &.sm{
+      p{
+        max-width: 615px;
+        @include max(991px) {
+          max-width: 500px;
+        }
+      }
+      
+    }
    
   }
   &-thumb{
@@ -84,7 +96,7 @@
     }
   }
 }
-.tecspark-btn-wrap {
+.optech-btn-wrap {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
@@ -97,7 +109,7 @@
 }
 // end v1
 
-.tecspark-hero {
+.optech-hero {
   &-section2{
     z-index: 0;
     position: relative;
@@ -106,7 +118,7 @@
       padding: 220px 0 100px;
     }
     @include max(767px) {
-      padding: 170px 0 80px;
+      padding: 200px 0 100px;
     }
     &:before {
       content: " ";
@@ -127,14 +139,14 @@
 
 // end v2
 
-.tecspark-hero {
+.optech-hero {
   &-section3{
-    padding: 280px 0 140px;
+    padding: 280px 0 130px;
     @include max(991px) {
-      padding: 220px 0 60px;
+      padding: 220px 0 100px;
     }
     @include max(767px) {
-      padding: 170px 0 40px;
+      padding: 200px 0 100px;
     }
   }
   &-thumb3{
@@ -146,20 +158,18 @@
 }
 // End v3
 
-.tecspark-hero-section4{
+.optech-hero-section4{
   padding: 180px 0 0;
   position: relative;
   @include max(991px) {
     padding: 200px 0 0;
   }
-  @include max(767px) {
-    padding: 180px 0 0;
-  }
+
  
 }
 // end v4
 
-.tecspark-hero {
+.optech-hero {
   &-section5{
     z-index: 0;
     position: relative;
@@ -196,7 +206,7 @@
     border-radius: 18px;
     background-color: var(--white-bg);
     @include max(991px) {
-      margin-top: 40px;
+      margin-top: 60px;
     }
     h4{
       margin-bottom: 5px;
@@ -204,19 +214,19 @@
   }
  
 }
-#tecspark-hero-form-btn{
+#optech-hero-form-btn{
   width: 100%;
   display: block;
   text-align: center;
 }
 // End v5
-.tecspark-hero-section6{
+.optech-hero-section6{
   margin-top: 144px;
   @include max(991px) {
-    margin-top: 92px;
+    margin-top: 0;
   }
 }
-.tecspark-hero-slider {
+.optech-hero-slider {
   &-item{
     z-index: 0;
     opacity: 1!important;
@@ -228,14 +238,11 @@
     animation-duration: 3s;
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
-    @include max(1199px) {
-      padding: 170px 0 150px;
-    }
     @include max(991px) {
-      padding: 170px 0 100px;
+      padding: 300px 0 150px;
     }
     @include max(767px) {
-      padding: 130px 0 80px;
+      padding: 250px 0 150px;
     }
     &::before{
       content: "";
@@ -252,8 +259,8 @@
   
 }
 
-.tecspark-hero-slider .tecspark-hero-next, 
-.tecspark-hero-slider .tecspark-hero-prev {
+.optech-hero-slider .optech-hero-next, 
+.optech-hero-slider .optech-hero-prev {
   width: 60px;
   height: 60px;
   left: 60px;
@@ -283,13 +290,13 @@
   }
 }
 
-.tecspark-hero-slider .tecspark-hero-prev {
+.optech-hero-slider .optech-hero-prev {
   left: auto;
   right: 60px;
 }
-.tecspark-hero-slider .slick-slide {
+.optech-hero-slider .slick-slide {
   -webkit-backface-visibility: hidden;
-  -webkit-transform: translate3d(0,0,0)
+  -webkit-transform: translate3d(0,0,0);
 }
 [data-animation-in] {
   opacity: 0;
@@ -366,7 +373,7 @@
 
 // End v6
 
-.tecspark-hero {
+.optech-hero {
   &-section7{
     z-index: 0;
     position: relative;
@@ -379,9 +386,7 @@
     @include max(991px) {
       padding: 200px 0 100px;
     }
-    @include max(767px) {
-      padding: 170px 0 80px;
-    }
+
 
    
   }
@@ -389,17 +394,17 @@
 
 // End v7
 
-.tecspark-hero {
+.optech-hero {
   &-section8{
     padding: 270px 0 214px;
     @include max(991px) {
       padding: 200px 0 100px;
     }
-    @include max(767px) {
-      padding: 150px 0 80px;
-    }
+
 
   }
   
 }
 // End v8
+
+

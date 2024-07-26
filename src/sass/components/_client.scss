@@ -1,7 +1,16 @@
-.tecspark-brand{
+.optech-brand{
+  &-section2{
+    padding: 100px 0 130px;
+    @include max(991px) {
+      padding: 100px 0;
+    }
+    @include max(767px) {
+      padding: 80px 0;
+    }
+  }
   &-title{
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 52px;
     p{
       font-size: 18px;
       color: var(--light-color2);
@@ -12,13 +21,20 @@
       }
     }
   }
-  &-section2{
-    padding: 80px 0 100px;
-    @include max(991px) {
-      padding: 80px 0 70px;
-    }
-    @include max(767px) {
-      padding: 80px 0 50px;
+  &-item{
+    opacity: 0.5;
+    text-align: center;
+    transition: all 0.4s;
+    display: flex !important;
+    justify-content: center;
+    &:hover{
+      opacity: 1;
     }
   }
+  
+}
+
+.optech-brand-slider .slick-track{
+  display: flex;
+  align-items: center;
 }

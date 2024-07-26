@@ -1,26 +1,50 @@
 // hero counter
-.tecspark-counter{
+.optech-counter{
   &-wrap{
     padding: 77px;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    border-radius: 30px;
     position: relative;
-    background-size: cover;
+    background-size: 100% 100%;
     justify-content:space-between;
+    border-radius: 30px;
+    &::before{
+      content: "";
+      left: 0;
+      top: 0;
+      width: 0;
+      height: 0;
+      position: absolute;
+    }
+    &::after{
+      content: "";
+      right: 0;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      position: absolute;
+    }
     @include max(1199px) {
       padding: 80px 60px;
     }
     @include max(991px) {
       row-gap: 40px;
-      border-radius: 15px;
+      border-radius: 70px 25px 70px 25px;
       background-color: var(--dark-bg);
+      &::before{
+        border-top: 60px solid var(--white-bg);
+        border-right: 60px solid transparent;
+      }
+      &::after{
+        border-bottom: 60px solid var(--white-bg);
+        border-left: 60px solid transparent;
+      }
+      
     }
     @include max(767px) {
       padding: 80px 15px;
     }
-    
   }
   &-icon{
     width: 70px;
@@ -34,17 +58,21 @@
   }
   &-data{
     position: relative;
+    width: 160px;
     &::before{
       content: "";
-      right: -70%;
+      right: -57%;
       top: 50%;
       height: 90px;
       width: 1px;
       position: absolute;
       background-color: #272F5D;
       transform: translateY(-50%);
+      @include max(1399px) {
+        right: -38%;
+      }
       @include max(1199px) {
-        right: -30%;
+        right: -25%;
       }
       @include max(991px) {
         right: 0;
@@ -64,13 +92,11 @@
     @include max(991px) {
       flex: 0 0 50%;
     }
-    @include max(575px) {
-      flex: 0 0 100%;
-    }
+   
   }
   
   &-number{
-    font-weight: 700;
+    font-weight: 600;
     font-size: 48px;
     line-height: 1.15em; /* 116.667% */
     letter-spacing: -3px;
@@ -84,28 +110,27 @@
 
 // End v2
 
-.tecspark-counter-wrap2{
+.optech-counter-wrap2{
   display: flex;
   gap: 96px;
-  flex-wrap: wrap;
   @include max(991px) {
     gap: 0px;
   }
   @include max(575px) {
     gap: 24px;
   }
-  .tecspark-counter-number{
+  .optech-counter-number{
     color: var(--heading-color);
   }
-  .tecspark-counter-data {
+  .optech-counter-data {
     p{
       color: var(--body-color);
     }
     &::before{
-      right: -36%;
+      right: -25%;
       background-color: var(--light-color1);
       @include max(991px) {
-        right: 0;
+        right: 25%;
       }
       @include max(600px) {
         content: none;
@@ -117,7 +142,7 @@
 // End v3
 
 
-.tecspark-counter{
+.optech-counter{
   &-section3{
     padding: 130px 0 80px;
     @include max(991px) {
@@ -166,16 +191,17 @@
       margin: 0 auto 20px;
     }
   }
-
-  
   &-number3{
-    font-weight: 700;
+    width: 160px;
+    font-weight: 600;
     font-size: 48px;
-    line-height: 1.15em; /* 116.667% */
-    letter-spacing: -3px;
+    line-height: 1;
+    margin-bottom: 5px;
+    letter-spacing: -0.03em;
     color: var(--heading-color);
     @include max(767px) { 
       font-size: 34px;
+      width: 100%;
     }
   }
 
